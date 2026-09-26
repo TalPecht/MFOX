@@ -1,0 +1,6 @@
+:root { --mfox-wine:#8f1d39; --mfox-ink:#40131f; --mfox-blush:#f8ecef; }
+.navbar-brand { font-weight: 700; }
+.card { border-radius: 14px; }
+.mfox-card { border:1px solid #f0d9de; border-radius:14px; padding:18px; background:white; }
+.metric { font-size:2rem; font-weight:700; color:var(--mfox-wine); }
+.muted { color:#78666b; }

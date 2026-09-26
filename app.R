@@ -31,6 +31,7 @@ ui <- page_navbar(
   ),
   theme = theme,
   header = tagList(
+    tags$link(rel="stylesheet", type="text/css", href="mfox.css"),
     tags$style(HTML("
       .mfox-card {border:1px solid #f0d9de;border-radius:14px;padding:18px;background:white;}
       .metric {font-size:2rem;font-weight:700;color:#8f1d39;}
