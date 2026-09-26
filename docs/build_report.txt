@@ -1,0 +1,10 @@
+assays.csv: 7 data rows; 18 columns
+biospecimens.csv: 7 data rows; 12 columns
+candidates.csv: 2 data rows; 12 columns
+cohorts.csv: 5 data rows; 16 columns
+controlled_vocab.csv: 17 data rows; 4 columns
+datasets.csv: 7 data rows; 13 columns
+exclusions.csv: 0 data rows; 6 columns
+people_labs.csv: 0 data rows; 10 columns
+studies.csv: 13 data rows; 21 columns
+update_log.csv: 0 data rows; 8 columns

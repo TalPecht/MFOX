@@ -1,0 +1,18 @@
+﻿field,allowed_value,definition,analysis_note
+biospecimen_class,Direct menstrual fluid,Whole/unfractionated menstrual fluid or effluent analyzed without culture,Included in direct-MF views
+biospecimen_class,Direct cellular fraction,Freshly isolated or sorted cells from menstrual fluid,Included in direct-MF views
+biospecimen_class,Direct tissue fraction,Tissue fragments directly recovered from menstrual fluid,Included in direct-MF views
+biospecimen_class,Cell-free fraction,Supernatant/serum/plasma-like menstrual-fluid fraction,Included in direct-MF views
+biospecimen_class,Extracellular vesicles,EVs/sEVs isolated directly from menstrual fluid,Included in direct-MF views
+biospecimen_class,Cultured menstrual-derived cells,MenSCs or other menstrual-derived cells expanded ex vivo,Separate cultured-derivative stratum
+biospecimen_class,Cultured-cell derivatives,"EVs, conditioned medium or products derived from cultured menstrual-derived cells",Separate cultured-derivative stratum
+biospecimen_class,Experimental derivatives,"Differentiated, treated, transfected or otherwise perturbed menstrual-derived cells",Separate experimental stratum
+derivation_class,Direct specimen,Whole menstrual fluid analyzed directly,May be pooled in direct-MF analyses
+derivation_class,Directly derived fraction,Fraction isolated from menstrual fluid without cell expansion,May be pooled in direct-MF analyses with stratification
+derivation_class,Cultured derivative,Material requiring ex-vivo cell culture/expansion,Never silently pooled with direct-MF profiling
+derivation_class,Experimental derivative,Cultured menstrual-derived material after experimental perturbation,Never silently pooled with direct-MF profiling
+ex_vivo_manipulation,None/processing only,"No culture; only collection, stabilization, separation or assay preparation",
+ex_vivo_manipulation,Isolation only,Fraction/cell/EV isolation without expansion,
+ex_vivo_manipulation,Short-term culture,"Culture without substantial expansion, as defined/reported by study",Capture duration if available
+ex_vivo_manipulation,Expanded culture,Passaged/expanded menstrual-derived cells,Capture passage number if available
+ex_vivo_manipulation,Differentiation/perturbation,"Experimental treatment, differentiation, transfection or stimulation",Capture intervention in notes

@@ -1,0 +1,6 @@
+﻿cohort_id,study_id,cohort_name,condition,n_participants,age_summary,contraception,menstrual_day,collection_device,collection_setting,time_to_processing,preservative,fresh_frozen,paired_blood,paired_endometrium,notes
+C009,S009,MenSC endometriosis/control,Endometriosis vs healthy,20,NR,Endometriosis cases excluded if hormonal treatment started,NR,Menstrual flow collection,NR,NR,NR,Cultured/stored,No,No,10 stored samples/group; RNA QC reduced transcriptome n
+C010,S010,DIA proteomics,Endometriosis vs control,16,NR,NR,NR,NR,NR,NR,NR,NR,No,No,8 vs 8
+C011,S011,uIF EV cohort,uIF vs fertile,17,NR,NR,Cycle day 2,NR,NR,NR,NR,Fresh/processed,No,No,"9 fertile, 8 uIF"
+C012,S012,Collection-method cohort,Healthy,12,NR,NR,Day 2,Cup; pad; vaginal swab,Home/self-collected,NR,NR,NR,No,No,Same participants across collection methods
+C013,S013,Adolescent pain cohort,Dysmenorrhea vs pain-free,51,Within 3 years after menarche,NR,4–30 months after menarche,Pad-derived effluent,NR,NR,NR,NR,No,No,UHPLC-MS subset 5 high pain/5 pain-free

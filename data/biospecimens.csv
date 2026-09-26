@@ -1,0 +1,8 @@
+﻿biospecimen_id,study_id,cohort_id,assay_id,sample_fraction,biospecimen_class,derivation_class,ex_vivo_manipulation,culture_status,passage_number,direct_mf_scope,notes
+B001,S009,C009,A009R,Cultured MenSCs,Cultured menstrual-derived cells,Cultured derivative,Expanded culture,Cultured MenSCs,NR,No,
+B002,S009,C009,A009P,Cultured MenSCs,Cultured menstrual-derived cells,Cultured derivative,Expanded culture,Cultured MenSCs,NR,No,
+B003,S010,C010,A010,Whole menstrual blood,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NA,Yes,CXCL5/IL1RN validated
+B004,S011,C011,A011E,Menstrual blood serum-derived EVs,Extracellular vesicles,Directly derived fraction,Isolation only,Not cultured,NA,Yes,
+B005,S011,C011,A011S,EV-depleted menstrual blood serum,Cell-free fraction,Directly derived fraction,Isolation only,Not cultured,NA,Yes,
+B006,S012,C012,A012,Whole menstrual effluent DNA,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NA,Yes,
+B007,S013,C013,A013,Menstrual effluent,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NA,Yes,Targeted lipid mediators

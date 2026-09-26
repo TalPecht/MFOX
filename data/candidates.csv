@@ -1,0 +1,3 @@
+﻿candidate_id,detected_date,source,title,year,doi_or_accession,url,matched_terms,candidate_type,triage_status,reviewer,decision_reason
+CAN001,2026-09-25,Human Reproduction abstract,Menstrual blood supports non-invasive longitudinal tracking of reproductive tract microbiome dynamics,2026,10.1093/humrep/deag083.664,https://academic.oup.com/humrep/article/41/Supplement_1/deag083.664/8726988,menstrual blood; microbiome; longitudinal; 16S,Conference abstract,Needs full curation,,Find full publication/dataset
+CAN002,2026-09-25,Targeted search,Longitudinal healthy MF NMR metabolomics + 16S + ITS study — bibliographic verification required,,,,menstrual fluid; NMR; 16S; ITS; longitudinal,Potential primary study,Needs verification,,Do not promote until primary source verified

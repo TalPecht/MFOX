@@ -1,0 +1,8 @@
+﻿dataset_id,study_id,assay_id,repository,accession,data_type,raw_available,processed_available,metadata_available,code_available,dataset_url,date_checked,notes
+D001,S009,A009R,SRA/BioProject,PRJNA884641,RNA-seq,Yes,Yes,Yes,NR,https://www.ncbi.nlm.nih.gov/bioproject/884641,2026-09-25,18 SRA experiments
+D002,S009,A009P,PRIDE/ProteomeXchange,PXD037033,Proteomics,Yes,Yes,Yes,NR,https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD037033-1,2026-09-25,
+D003,S010,A010,ProteomeXchange/iProX,IPX0006757000,DIA proteomics,Yes,NR,NR,NR,https://www.sciencedirect.com/science/article/pii/S1874391923001847,2026-09-25,
+D004,S012,A012,GEO,GSE275888,EPIC v2 methylation,Yes,Yes,Yes,NR,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275888,2026-09-25,Raw IDATs + processed
+D005,S001,,GEO,GSE203191,scRNA-seq,Yes,Yes,Yes,NR,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203191,2026-09-25,
+D006,S007,,PRIDE,PXD042101,sEV proteomics,Yes,Yes,Partial,NR,https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD042101,2026-09-25,
+D007,S008,,GEO,GSE310627,sEV RNA-seq,Yes,Yes,Yes,NR,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310627,2026-09-25,
