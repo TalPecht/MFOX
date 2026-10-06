@@ -1829,35 +1829,190 @@ server <- function(input,output,session){
     if(!nrow(d)) d <- tibble::tibble(Status="No companies match the current Community filters.")
     datatable(d,escape=FALSE,rownames=FALSE,filter=if("Status" %in% names(d)) "none" else "top",options=list(pageLength=15,scrollX=TRUE))
   })
-  output$collaboration_groups<-renderUI({
+  output$collaboration_groups <- renderUI({
+    
     db_tick()
-    d<-mfox$authorships |>
-      left_join(mfox$people,by="person_id") |>
-      left_join(mfox$community_publications,by="publication_id") |>
-      filter(!is.na(institution),institution!="") |>
-      group_by(institution,city,country) |>
-      summarise(n_people=n_distinct(person_id),n_pubs=n_distinct(publication_id),
-                researchers=paste(head(sort(unique(name)),8),collapse=" · "),
-                papers=paste(head(sort(unique(title)),4),collapse=" | "),.groups="drop") |>
-      arrange(desc(n_pubs),desc(n_people))
-    if(!nrow(d)) return(div(class="empty-note","No collaboration groups are represented in the current Community data."))
-    div(class="company-overview-grid community-group-grid",lapply(seq_len(nrow(d)),function(i){
-      loc <- paste(na.omit(c(d$city[i],d$country[i])),collapse=", ")
-      div(class="company-overview-card community-group-card",
-        div(class="company-card-head community-group-head",
-          div(class="entity-heading",
-            entity_mark(d$institution[i]),
-            div(h3(d$institution[i]),div(class="company-location",icon("location-dot"),ifelse(nzchar(loc),loc,"Location not curated"))))
+    
+    d <- mfox$authorships |>
+      left_join(
+        mfox$people,
+        by="person_id"
+      ) |>
+      left_join(
+        mfox$community_publications,
+        by="publication_id"
+      ) |>
+      
+      filter(
+        !is.na(institution),
+        institution != ""
+      ) |>
+      
+      # Build a clickable publication link before grouping
+      mutate(
+        
+        .paper_label = ifelse(
+          is.na(year),
+          as.character(title),
+          paste0(year, " · ", title)
         ),
-        div(class="community-group-stats",
-          span(icon("file-lines"),strong(d$n_pubs[i])," MF publications"),
-          span(icon("users"),strong(d$n_people[i])," researchers")
+        
+        .paper = ifelse(
+          !is.na(source_url) & nzchar(source_url),
+          
+          paste0(
+            '<a href="',
+            htmltools::htmlEscape(source_url),
+            '" target="_blank" rel="noopener noreferrer">',
+            htmltools::htmlEscape(.paper_label),
+            ' ↗</a>'
+          ),
+          
+          htmltools::htmlEscape(.paper_label)
+        )
+      ) |>
+      
+      # Prefer recent representative publications
+      arrange(
+        institution,
+        desc(year),
+        title
+      ) |>
+      
+      group_by(
+        institution,
+        city,
+        country
+      ) |>
+      
+      summarise(
+        
+        n_people = n_distinct(person_id),
+        
+        n_pubs = n_distinct(publication_id),
+        
+        researchers = paste(
+          head(
+            sort(unique(name)),
+            8
+          ),
+          collapse=" · "
         ),
-        div(class="company-card-section",strong("Researchers"),p(d$researchers[i])),
-        tags$details(class="community-publications",tags$summary(icon("book-open")," Representative publications"),p(d$papers[i]))
+        
+        papers = paste(
+          head(
+            unique(.paper),
+            4
+          ),
+          collapse="<br>"
+        ),
+        
+        .groups="drop"
+      ) |>
+      
+      arrange(
+        desc(n_pubs),
+        desc(n_people)
       )
-    }))
+    
+    if(!nrow(d)) {
+      return(
+        div(
+          class="empty-note",
+          "No collaboration groups are represented in the current Community data."
+        )
+      )
+    }
+    
+    div(
+      class="company-overview-grid community-group-grid",
+      
+      lapply(
+        seq_len(nrow(d)),
+        function(i){
+          
+          loc <- paste(
+            na.omit(
+              c(
+                d$city[i],
+                d$country[i]
+              )
+            ),
+            collapse=", "
+          )
+          
+          div(
+            class="company-overview-card community-group-card",
+            
+            div(
+              class="company-card-head community-group-head",
+              
+              div(
+                class="entity-heading",
+                
+                entity_mark(
+                  d$institution[i]
+                ),
+                
+                div(
+                  h3(
+                    d$institution[i]
+                  ),
+                  
+                  div(
+                    class="company-location",
+                    icon("location-dot"),
+                    ifelse(
+                      nzchar(loc),
+                      loc,
+                      "Location not curated"
+                    )
+                  )
+                )
+              )
+            ),
+            
+            div(
+              class="community-group-stats",
+              
+              span(
+                icon("file-lines"),
+                strong(d$n_pubs[i]),
+                " MF publications"
+              ),
+              
+              span(
+                icon("users"),
+                strong(d$n_people[i]),
+                " researchers"
+              )
+            ),
+            
+            div(
+              class="company-card-section",
+              strong("Researchers"),
+              p(d$researchers[i])
+            ),
+            
+            tags$details(
+              class="community-publications",
+              
+              tags$summary(
+                icon("book-open"),
+                " Representative publications"
+              ),
+              
+              div(
+                class="community-publication-links",
+                HTML(d$papers[i])
+              )
+            )
+          )
+        }
+      )
+    )
   })
+  
   community_evidence<-reactive({mfox$authorships|>left_join(mfox$people|>select(person_id,name,institution,city,country,latitude,longitude,public_profile_url),by="person_id")|>left_join(mfox$community_publications|>select(publication_id,mfox_study_id,title,year,source_url),by="publication_id")|>left_join(mfox$evidence|>select(study_id,omics_modality,biospecimen_class,condition,population_category,research_domain)|>distinct(),by=c("mfox_study_id"="study_id"))|>mutate(technology=coalesce(omics_modality,"Not represented in MFOX Evidence"),sample_type=coalesce(biospecimen_class,"Not represented in MFOX Evidence"),disease_question=coalesce(condition,population_category,"Not reported"),domain=coalesce(research_domain,"Not reported"))})
   make_bipartite_plot<-function(edges,left_col,right_col,left_label,right_label){edges<-edges|>filter(!is.na(.data[[left_col]]),!is.na(.data[[right_col]]))|>count(.data[[left_col]],.data[[right_col]],name="weight");validate(need(nrow(edges)>0,"No connections match the current filters."));left<-sort(unique(edges[[left_col]]));right<-sort(unique(edges[[right_col]]));nodes<-bind_rows(tibble(label=left,x=0,y=seq_along(left),group=left_label),tibble(label=right,x=1,y=seq_along(right),group=right_label))|>group_by(group)|>mutate(y=(y-(max(y)+1)/2)/max(1,max(y)))|>ungroup();seg<-edges|>left_join(nodes|>filter(group==left_label)|>select(left=label,x0=x,y0=y),by=setNames("left",left_col))|>left_join(nodes|>filter(group==right_label)|>select(right=label,x1=x,y1=y),by=setNames("right",right_col));p<-plot_ly();for(i in seq_len(nrow(seg)))p<-p|>add_segments(x=seg$x0[i],y=seg$y0[i],xend=seg$x1[i],yend=seg$y1[i],line=list(width=min(8,1+seg$weight[i]),color="rgba(101,20,47,.25)"),hoverinfo="text",text=paste0(seg[[left_col]][i]," ↔ ",seg[[right_col]][i],"<br>Records: ",seg$weight[i]),showlegend=FALSE);sizes<-bind_rows(edges|>group_by(label=.data[[left_col]])|>summarise(n=sum(weight),.groups="drop")|>mutate(group=left_label),edges|>group_by(label=.data[[right_col]])|>summarise(n=sum(weight),.groups="drop")|>mutate(group=right_label));nodes<-nodes|>left_join(sizes,by=c("label","group"));p|>add_markers(data=nodes,x=~x,y=~y,size=~n,sizes=c(12,34),marker=list(color="#B92F53"),text=~paste0("<b>",label,"</b><br>",group,"<br>Linked records: ",n),hoverinfo="text",showlegend=FALSE)|>add_text(data=nodes,x=~x,y=~y,text=~label,textposition=~ifelse(x==0,"middle left","middle right"),hoverinfo="skip",showlegend=FALSE)|>layout(xaxis=list(visible=FALSE,range=c(-.45,1.45)),yaxis=list(visible=FALSE),margin=list(l=150,r=150,t=30,b=30))}
   output$explore_scientific_network<-renderPlotly({
