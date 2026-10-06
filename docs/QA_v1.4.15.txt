@@ -1,0 +1,10 @@
+MFOX v1.4.15 static QA
+Registry records: 17
+Registry sources: 4 (ClinicalTrials.gov; German Clinical Trials Register (DRKS); ISRCTN; Onderzoek met mensen (NL))
+Registry IDs unique: yes
+Registry linked-study foreign keys valid: yes
+NCT06332560 present: yes
+ISRCTN72218532 present: yes
+DRKS00036558 present: yes
+Voting architecture: native Shiny action buttons; candidate cards do not depend on candidate_votes()
+R runtime launch: not available in build environment

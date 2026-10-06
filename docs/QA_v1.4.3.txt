@@ -1,0 +1,30 @@
+# QA — MFOX v1.4.3
+
+Date: 2026-09-29
+
+## Regression addressed
+
+Explore filter: Clinical context = Endometriosis; Technology = Any; Sample type = Any.
+
+Static/data regression evaluation against the packaged CSVs resolves:
+- 11 studies
+- 14 assays
+- 11 mapped publications
+- 5 indexed datasets
+- 0 verified project/program links
+
+## Checks performed
+
+- Explicit project/study URL names used before project-related joins: PASS.
+- Project summary returns a typed empty table when no filtered project links exist: PASS.
+- Projects & Programs has an explicit no-link empty state: PASS.
+- Company↔project aggregation uses explicit project URL naming: PASS.
+- Static delimiter balance for app.R: PASS.
+- Duplicate Shiny input IDs: none detected.
+- Duplicate server output definitions: none detected.
+- UI output IDs without a server output: none detected.
+- Existing relational CSVs unchanged by this bugfix.
+
+## Runtime limitation
+
+This execution environment does not include the R/Shiny runtime and package stack, so the browser interaction itself could not be launched here. The bug was traced to the exact dplyr join-name collision and patched at that source.

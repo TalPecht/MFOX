@@ -1,0 +1,17 @@
+source_id,registry,region,source_type,website,search_route,priority,notes
+SRC001,ClinicalTrials.gov,USA / global,Registry,https://clinicaltrials.gov/,Direct search + WHO ICTRP,High,Major global registry; curated menstrual-fluid records already present.
+SRC002,ISRCTN,UK / international,Registry,https://www.isrctn.com/,Direct search + WHO ICTRP,High,International registry; curated menstrual-fluid records already present.
+SRC003,German Clinical Trials Register (DRKS),Germany,Registry,https://drks.de/,Direct search + WHO ICTRP,High,WHO primary registry; curated menstrual-fluid records already present.
+SRC004,Onderzoek met mensen (NL),Netherlands,Registry,https://onderzoekmetmensen.nl/en,Direct search + WHO ICTRP,High,Dutch public human-research registry; curated menstrual-fluid records already present.
+SRC005,Chinese Clinical Trial Registry (ChiCTR),China,Registry,https://www.chictr.org.cn/,Direct search + WHO ICTRP,High,WHO primary registry; curated menstrual-fluid and menstrual-blood-derived cell records are represented in MFOX.
+SRC006,Brazilian Clinical Trials Registry (ReBEC),Brazil,Registry,https://ensaiosclinicos.gov.br/,Direct search + WHO ICTRP,High,WHO primary registry; curated menstrual-fluid records are represented in MFOX.
+SRC007,Clinical Trials Information System (CTIS),European Union / EEA,Registry,https://euclinicaltrials.eu/,WHO ICTRP + targeted direct search,High,EU registry/data provider; in MFOX active search scope.
+SRC008,Australian New Zealand Clinical Trials Registry (ANZCTR),Australia / New Zealand,Registry,https://www.anzctr.org.au/,WHO ICTRP + targeted direct search,High,WHO primary registry; in MFOX active search scope.
+SRC009,Clinical Trials Registry - India (CTRI),India,Registry,https://ctri.nic.in/,WHO ICTRP + targeted direct search,High,WHO primary registry; in MFOX active search scope.
+SRC010,Clinical Research Information Service (CRiS),Republic of Korea,Registry,https://cris.nih.go.kr/,WHO ICTRP + targeted direct search,Medium,WHO primary registry; in MFOX active search scope.
+SRC011,Japan Registry of Clinical Trials / JPRN,Japan,Registry,https://jrct.niph.go.jp/,WHO ICTRP + targeted direct search,High,WHO primary registry/data provider; UMIN/JPRN searches are included in MFOX active search scope.
+SRC012,Pan African Clinical Trial Registry (PACTR),Africa,Registry,https://pactr.samrc.ac.za/,WHO ICTRP + targeted direct search,Medium,WHO primary registry; in MFOX active search scope.
+SRC013,Iranian Registry of Clinical Trials (IRCT),Iran,Registry,https://irct.behdasht.gov.ir/,WHO ICTRP + targeted direct search,Medium,WHO primary registry; in MFOX active search scope.
+SRC014,Thai Clinical Trials Registry (TCTR),Thailand,Registry,https://www.thaiclinicaltrials.org/,WHO ICTRP + targeted direct search,Medium,WHO primary registry; in MFOX active search scope.
+SRC015,Sri Lanka Clinical Trials Registry (SLCTR),Sri Lanka,Registry,https://slctr.lk/,WHO ICTRP + targeted direct search,Medium,WHO primary registry; in MFOX active search scope.
+SRC016,WHO ICTRP,Global,Discovery aggregator,https://trialsearch.who.int/,Cross-registry discovery,High,Discovery layer used to identify records across WHO registry data providers; MFOX keeps the original registry as the canonical source.

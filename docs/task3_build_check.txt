@@ -1,0 +1,11 @@
+MFOX v0.6 Task 3 build check
+==============================
+PASS
+- 18 curated investigator records
+- 14 distinct institution labels
+- 8 countries
+- all mapped records have latitude/longitude
+- all semicolon-delimited study links resolve to curated study IDs
+- people_labs schema remains compatible with MFOX validator
+
+Note: R/Shiny runtime validation should still be run locally with source("scripts/validate_database.R").

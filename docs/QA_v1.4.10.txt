@@ -1,0 +1,6 @@
+MFOX v1.4.10 runtime bugfix QA
+- Fixed two bare small() calls in Companies > Evidence & maturity.
+- Replaced with tags$small(), matching the rest of the Shiny UI.
+- Confirmed no remaining bare small() calls in R source.
+- Scientific data files unchanged.
+- R runtime is not available in this build environment, so shiny::runApp() was not executed here.

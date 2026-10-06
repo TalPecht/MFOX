@@ -1,26 +1,27 @@
-cohort_id,study_id,cohort_name,condition,n_participants,age_summary,contraception,menstrual_day,collection_device,collection_setting,time_to_processing,preservative,fresh_frozen,paired_blood,paired_endometrium,notes
-C009,S009,MenSC endometriosis/control,Endometriosis vs healthy,20,NR,Endometriosis cases excluded if hormonal treatment started,NR,Menstrual flow collection,NR,NR,NR,Cultured/stored,No,No,10 stored samples/group; RNA QC reduced transcriptome n
-C010,S010,DIA proteomics,Endometriosis vs control,16,NR,NR,NR,NR,NR,NR,NR,NR,No,No,8 vs 8
-C011,S011,uIF EV cohort,uIF vs fertile,17,NR,NR,Cycle day 2,NR,NR,NR,NR,Fresh/processed,No,No,"9 fertile, 8 uIF"
-C012,S012,Collection-method cohort,Healthy,12,NR,NR,Day 2,Cup; pad; vaginal swab,Home/self-collected,NR,NR,NR,No,No,Same participants across collection methods
-C013,S013,Adolescent pain cohort,Dysmenorrhea vs pain-free,51,Within 3 years after menarche,NR,4–30 months after menarche,Pad-derived effluent,NR,NR,NR,NR,No,No,UHPLC-MS subset 5 high pain/5 pain-free
-C001,S001,Endometriosis cohort,Endometriosis,33.0,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C002,S002,Endometriosis cohort,Endometriosis,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C003,S003,Endometriosis cohort,Endometriosis,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C004,S004,Endometriosis cohort,Endometriosis,10.0,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C005,S005,Healthy cohort,Healthy,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C006,S006,Endometriosis cohort,Endometriosis,39.0,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C007,S007,Endometriosis cohort,Endometriosis,17.0,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C008,S008,Endometriosis / parity cohort,Endometriosis / parity,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C014,S014,Healthy cohort,Healthy,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C015,S015,Healthy cohort,Healthy,4,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C016,S016,Endometriosis cohort,Endometriosis,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C017,S017,Healthy / validation cohort,Healthy / validation,328,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C018,S018,Unexplained infertility cohort,Unexplained infertility,20,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C019,S019,Healthy / experimental cohort,Healthy / experimental,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C020,S020,Healthy / experimental cohort,Healthy / experimental,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C021,S021,Healthy cohort,Healthy,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C022,S022,HPV / genital tract infection cohort,HPV / genital tract infection,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C023,S023,Healthy cohort,Healthy,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C024,S024,Endometriosis cohort,Endometriosis,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
-C025,S025,Healthy cohort,Healthy,,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Conservative metadata; verify full text during deep curation
+cohort_id,study_id,cohort_name,condition,n_participants,age_summary,contraception,menstrual_day,collection_device,collection_setting,time_to_processing,preservative,fresh_frozen,paired_blood,paired_endometrium,notes,clinical_context
+C009,S009,MenSC endometriosis/control,Endometriosis vs healthy,20.0,NR,Endometriosis cases excluded if hormonal treatment started,NR,Menstrual flow collection,NR,NR,NR,Cultured/stored,No,No,10 stored samples/group; RNA QC reduced transcriptome n,Endometriosis
+C010,S010,DIA proteomics,Endometriosis vs control,16.0,NR,NR,NR,NR,NR,NR,NR,NR,No,No,8 vs 8,Endometriosis
+C011,S011,uIF EV cohort,uIF vs fertile,17.0,NR,NR,Cycle day 2,NR,NR,NR,NR,Fresh/processed,No,No,"9 fertile, 8 uIF",Infertility
+C012,S012,Collection-method cohort,Healthy,12.0,NR,NR,Day 2,Cup; pad; vaginal swab,Home/self-collected,NR,NR,NR,No,No,Same participants across collection methods,Healthy / reference
+C013,S013,Adolescent pain cohort,Dysmenorrhea vs pain-free,51.0,Within 3 years after menarche,NR,4–30 months after menarche,Pad-derived effluent,NR,NR,NR,NR,No,No,UHPLC-MS subset 5 high pain/5 pain-free,Dysmenorrhea
+C001,S001,Endometriosis / controls,Endometriosis,33.0,NR,NR,NR,Menstrual cup / effluent collection,At home / study site,NR,NR,Fresh/variable,NR,NR,Fresh menstrual effluent tissue/cells,Endometriosis
+C002,S002,Endometriosis / controls,Endometriosis,,NR,NR,NR,NR,At home / study site,NR,NR,Fresh/variable,NR,NR,Immune/cellular study,Endometriosis
+C003,S003,Endometriosis / controls,Endometriosis,,NR,NR,NR,Menstrual cup,At home / study site,NR,NR,Fresh/variable,NR,NR,Preprint,Endometriosis
+C004,S004,Endometriosis / controls,Endometriosis,10.0,NR,NR,NR,Menstrual cup,At home / study site,NR,NR,Fresh/variable,NR,NR,snRNA + bulk RNA,Endometriosis
+C005,S005,Healthy donors,Healthy,,NR,NR,NR,Liquid / tampon,At home / study site,NR,NR,Fresh/variable,NR,NR,Foundational proteome,Healthy / reference
+C006,S006,Endometriosis / controls,Endometriosis,39.0,NR,NR,NR,Direct dried spot collection,At home / study site,NR,NR,Fresh/variable,NR,NR,Dried menstrual blood,Endometriosis
+C007,S007,Endometriosis / controls,Endometriosis,17.0,NR,NR,NR,Menstrual cup,At home / study site,NR,NR,Fresh/variable,NR,NR,MF-sEV proteomics,Endometriosis
+C008,S008,Endometriosis / controls,Endometriosis,,NR,NR,NR,Menstrual cup,At home / study site,NR,NR,Fresh/variable,NR,NR,MF-sEV RNA-seq,Endometriosis
+C014,S014,Endometriosis / controls,Endometriosis,,NR,NR,NR,NR,At home / study site,NR,NR,Fresh/variable,NR,NR,Menstrual blood cells,Endometriosis
+C015,S015,Pilot menstrual metabolome,Mixed,4.0,NR,NR,NR,Menstrual cup,At home / study site,NR,NR,Fresh/variable,NR,NR,2 with endometriosis; 2 without,Other / mixed
+C016,S016,At-home validation cohort,Mixed reproductive health,328.0,NR,NR,NR,Tampon,At home / study site,NR,NR,Fresh/variable,NR,NR,At-home stabilized collection,Other / mixed
+C017,S017,Inflammatory resolution cohorts,Healthy / endometriosis / autoimmune,342.0,NR,NR,NR,Tampon,At home / study site,NR,NR,Fresh/variable,NR,NR,Multiple overlapping cohorts,Mixed clinical cohorts
+C018,S018,Healthy forensic proteomics cohort,Healthy,44.0,NR,NR,NR,Self-collected menstrual blood,At home / study site,NR,NR,Fresh/variable,NR,NR,Multiple days of menses,Healthy / reference
+C019,S019,Endometriosis / controls,Endometriosis,42.0,NR,NR,NR,Menstrual blood collection,At home / study site,NR,NR,Fresh/variable,NR,NR,MenSC isolation,Endometriosis
+C020,S020,Longitudinal microbiome cohort,Healthy / altered microbiome,20.0,NR,NR,NR,Menstrual cup,At home / study site,NR,NR,Fresh/variable,NR,NR,Up to 5 cycles planned,Healthy / reference
+C021,S021,Healthy reproductive physiology,Healthy reproductive physiology,,,,,Menstrual cup,,,,,Yes,NR,v0.8 cellular-profiling expansion,Healthy / reference
+C022,S022,Healthy reproductive physiology,Healthy reproductive physiology,25.0,,,,Menstrual cup,,,,,Yes,NR,v0.8 cellular-profiling expansion,Healthy / reference
+C023,S023,Recurrent pregnancy loss,Recurrent pregnancy loss,32.0,,,,Menstrual cup,,,,,Yes,NR,v0.8 cellular-profiling expansion,Recurrent pregnancy loss
+C024,S024,Reproductive immunology,Reproductive immunology,,,,,Menstrual cup,,,,,NR,NR,v0.8 cellular-profiling expansion,Reproductive immunology
+C025,S025,Contraceptive use,Contraceptive use,13.0,,,,NR,,,,,NR,NR,v0.8 cellular-profiling expansion,Contraception
+C026,S026,"Healthy, endometriosis and PCOS","Healthy, endometriosis and PCOS",,,,,NR,,,,,Yes,NR,v0.8 cellular-profiling expansion,Mixed clinical cohorts

@@ -1,0 +1,13 @@
+# QA — MFOX v1.4.9
+
+Base: MFOX v1.4.8 Readability + Community orientation.
+
+Static checks:
+- option-2 MFOX Den PNG installed at www/mfox_den.png: PASS
+- user-facing app.R contains MFOX Den naming and no remaining "Fox Den" display label: PASS
+- version chip updated to v1.4.9: PASS
+- internal fox_den IDs retained: PASS
+- scientific CSV files unchanged from v1.4.8: PASS
+- ZIP integrity: PASS after packaging
+
+Runtime note: R/Shiny is not available in the build environment; launch testing remains a local deployment check.

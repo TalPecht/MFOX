@@ -1,0 +1,121 @@
+authorship_id,publication_id,person_id,author_position,author_count,is_first_author,is_last_author,is_corresponding_author,is_equal_contribution,contribution_statement_source,notes
+AU0001,CP001,P019,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0002,CP003,P021,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0003,CP004,P022,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0004,CP005,P023,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0005,CP006,P024,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0006,CP007,P025,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0007,CP008,P026,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0008,CP009,P027,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0009,CP010,P028,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0010,CP011,P029,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0011,CP012,P030,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0012,CP013,P031,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0013,CP014,P032,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0014,CP015,P033,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0015,CP016,P034,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0016,CP017,P034,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0017,CP018,P023,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0018,CP019,P035,1.0,,Yes,No,No,No,MFOX studies.csv,First-author status from curated study metadata.
+AU0019,CP001,P001,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0020,CP015,P001,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0021,CP001,P002,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0022,CP015,P002,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0023,CP001,P003,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0024,CP003,P004,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0025,CP004,P005,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0026,CP004,P006,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0027,CP007,P007,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0028,CP007,P008,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0029,CP008,P009,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0030,CP006,P010,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0031,CP010,P011,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0032,CP011,P012,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0033,CP012,P013,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0034,CP015,P014,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0035,CP016,P015,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0036,CP016,P016,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0037,CP014,P017,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0038,CP005,P018,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0039,CP018,P018,,,No,No,No,No,MFOX people_labs.csv,Known study-linked contributor; exact author position to be enriched.
+AU0040,CP002,P063,1.0,9.0,Yes,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0041,CP002,P064,2.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0042,CP002,P065,3.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0043,CP002,P066,4.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0044,CP002,P067,5.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0045,CP002,P068,6.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0046,CP002,P069,7.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0047,CP002,P001,8.0,9.0,No,No,No,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0048,CP002,P002,9.0,9.0,No,Yes,Yes,No,PubMed PMID 30134794,Corresponding author identified from PubMed affiliation/contact metadata.
+AU0049,CP021,P036,1.0,13.0,Yes,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0050,CP021,P037,2.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0051,CP021,P038,3.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0052,CP021,P039,4.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0053,CP021,P040,5.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0054,CP021,P041,6.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0055,CP021,P042,7.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0056,CP021,P043,8.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0057,CP021,P044,9.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0058,CP021,P045,10.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0059,CP021,P046,11.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0060,CP021,P047,12.0,13.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0061,CP021,P048,13.0,13.0,No,Yes,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0062,CP022,P049,1.0,3.0,Yes,No,Yes,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0063,CP022,P050,2.0,3.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0064,CP022,P051,3.0,3.0,No,Yes,Yes,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0065,CP023,P052,1.0,9.0,Yes,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0066,CP023,P053,2.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0067,CP023,P054,3.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0068,CP023,P055,4.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0069,CP023,P056,5.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0070,CP023,P057,6.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0071,CP023,P058,7.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0072,CP023,P059,8.0,9.0,No,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0073,CP023,P060,9.0,9.0,No,Yes,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0074,CP024,P061,1.0,2.0,Yes,No,No,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0075,CP024,P062,2.0,2.0,No,Yes,Yes,No,Publisher/PubMed record,Equal contribution recorded only when explicitly stated; none asserted here.
+AU0076,CP025,P070,1.0,9.0,Yes,No,Yes,No,,v0.8 verified authorship
+AU0077,CP025,P071,2.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0078,CP025,P072,3.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0079,CP025,P073,4.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0080,CP025,P074,5.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0081,CP025,P075,6.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0082,CP025,P076,7.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0083,CP025,P077,8.0,9.0,No,No,No,No,,v0.8 verified authorship
+AU0084,CP025,P078,9.0,9.0,No,Yes,No,No,,v0.8 verified authorship
+AU0085,CP026,P079,1.0,8.0,Yes,No,No,Yes,Article author note,v0.8 verified authorship
+AU0086,CP026,P080,2.0,8.0,No,No,No,Yes,Article author note,v0.8 verified authorship
+AU0087,CP026,P072,3.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0088,CP026,P081,4.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0089,CP026,P076,5.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0090,CP026,P082,6.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0091,CP026,P078,7.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0092,CP026,P070,8.0,8.0,No,Yes,Yes,No,,v0.8 verified authorship
+AU0093,CP027,P083,1.0,8.0,Yes,No,No,No,,v0.8 verified authorship
+AU0094,CP027,P079,2.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0095,CP027,P084,3.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0096,CP027,P085,4.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0097,CP027,P086,5.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0098,CP027,P078,6.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0099,CP027,P087,7.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0100,CP027,P070,8.0,8.0,No,Yes,Yes,No,,v0.8 verified authorship
+AU0101,CP028,P079,1.0,7.0,Yes,No,No,No,,v0.8 verified authorship
+AU0102,CP028,P083,2.0,7.0,No,No,No,No,,v0.8 verified authorship
+AU0103,CP028,P088,3.0,7.0,No,No,No,No,,v0.8 verified authorship
+AU0104,CP028,P089,4.0,7.0,No,No,No,No,,v0.8 verified authorship
+AU0105,CP028,P085,5.0,7.0,No,No,No,No,,v0.8 verified authorship
+AU0106,CP028,P078,6.0,7.0,No,No,No,No,,v0.8 verified authorship
+AU0107,CP028,P070,7.0,7.0,No,Yes,Yes,No,,v0.8 verified authorship
+AU0108,CP029,P090,1.0,8.0,Yes,No,No,No,,v0.8 verified authorship
+AU0109,CP029,P091,2.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0110,CP029,P092,3.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0111,CP029,P093,4.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0112,CP029,P094,5.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0113,CP029,P095,6.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0114,CP029,P096,7.0,8.0,No,No,No,No,,v0.8 verified authorship
+AU0115,CP029,P070,8.0,8.0,No,Yes,No,No,,v0.8 verified authorship
+AU0116,CP030,P097,1.0,4.0,Yes,No,No,No,,v0.8 verified authorship
+AU0117,CP030,P098,2.0,4.0,No,No,No,No,,v0.8 verified authorship
+AU0118,CP030,P099,3.0,4.0,No,No,No,No,,v0.8 verified authorship
+AU0119,CP030,P100,4.0,4.0,No,Yes,No,No,,v0.8 verified authorship
+AU0120,CP031,P070,1.0,1.0,Yes,Yes,No,No,,Single-author review/perspective.

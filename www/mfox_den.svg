@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">MFOX Fox Den</title>
+  <desc id="desc">A minimal fox inside a layered den, using the MFOX wine, rose and warm cream palette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8f4"/>
+      <stop offset="1" stop-color="#f7dfe4"/>
+    </linearGradient>
+    <linearGradient id="den" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c56b6f"/>
+      <stop offset="1" stop-color="#7a1832"/>
+    </linearGradient>
+    <linearGradient id="fox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e98567"/>
+      <stop offset="1" stop-color="#a11f46"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#40131f" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="704" height="344" rx="54" fill="url(#bg)"/>
+  <circle cx="610" cy="72" r="8" fill="#d69b54" opacity=".85"/>
+  <circle cx="650" cy="108" r="4" fill="#b83254" opacity=".55"/>
+  <circle cx="76" cy="86" r="5" fill="#2f7e83" opacity=".48"/>
+  <path d="M148 292C148 153 237 72 360 72s212 81 212 220" fill="none" stroke="url(#den)" stroke-width="70" stroke-linecap="round" filter="url(#shadow)"/>
+  <path d="M198 292c0-104 67-163 162-163s162 59 162 163" fill="#fff8f4"/>
+  <path d="M280 203l36-66 44 34 44-34 36 66-14 83-66 44-66-44z" fill="url(#fox)" filter="url(#shadow)"/>
+  <path d="M306 176l10-39 37 29zM414 176l-10-39-37 29z" fill="#7a1832"/>
+  <path d="M322 262l38 34 38-34-18-33h-40z" fill="#fff3ed"/>
+  <ellipse cx="331" cy="220" rx="7" ry="9" fill="#fff"/>
+  <ellipse cx="389" cy="220" rx="7" ry="9" fill="#fff"/>
+  <circle cx="360" cy="260" r="8" fill="#40131f"/>
+  <path d="M360 268v15" stroke="#40131f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M279 312c45 17 117 19 163 0" fill="none" stroke="#d69b54" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+</svg>

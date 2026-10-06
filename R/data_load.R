@@ -15,7 +15,16 @@ load_mfox_data <- function() {
     biospecimens = read_mfox("biospecimens"),
     assays = read_mfox("assays"),
     datasets = read_mfox("datasets"),
+    registry_studies = read_mfox("registry_studies"),
+    registry_sources = read_mfox("registry_sources"),
+    projects = read_mfox("projects"),
+    project_studies = read_mfox("project_studies"),
+    project_companies = read_mfox("project_companies"),
     people_labs = read_mfox("people_labs"),
+    people = read_mfox("people"),
+    community_publications = read_mfox("community_publications"),
+    companies = read_mfox("companies"),
+    authorships = read_mfox("authorships"),
     candidates = read_mfox("candidates"),
     exclusions = read_mfox("exclusions"),
     update_log = read_mfox("update_log"),
@@ -31,7 +40,7 @@ load_mfox_data <- function() {
     ) |>
     left_join(
       x$cohorts |> select(cohort_id, cohort_name, n_participants, menstrual_day,
-                           collection_device, collection_setting, time_to_processing,
+                           collection_device, collection_setting, time_to_processing, clinical_context,
                            preservative, fresh_frozen, paired_blood, paired_endometrium),
       by = "cohort_id"
     )

@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-title: "MFOX: Menstrual Fluid Omics Explorer"
+title: "MFOX-Menstrual Fluid Omics eXplorer"
 message: "If you use MFOX, please cite the version of the resource you used. A manuscript DOI and archived release DOI will be added after publication/release."
 type: software
 authors:
   - name: "MFOX contributors"
-version: "0.1.0"
-date-released: "2026-09-26"
+version: "1.4.4"
+date-released: "2026-09-29"
 license: MIT
 repository-code: "https://github.com/REPLACE_WITH_OWNER/MFOX"

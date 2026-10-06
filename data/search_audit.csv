@@ -1,0 +1,28 @@
+audit_id,record,decision,reason,modality,source,pmid,doi_or_accession
+IN001,Shih et al. 2022 single-cell menstrual effluent,Included,Primary human menstrual effluent omics,scRNA-seq,PubMed/GEO,36104692,GSE203191
+IN002,Schwalie et al. 2024 menstrual fluid single-cell characterization,Included,Primary human MF omics; preprint retained with status,scRNA-seq + bulk RNA,medRxiv,,10.1101/2024.05.06.24306766
+IN003,Leap et al. 2026 single-nucleus menstrual fluid,Included,Primary human MF omics,snRNA-seq + bulk RNA,PubMed,42381032,10.1186/s12916-026-05020-6
+IN004,Wang et al. 2025 diagnostic platform,Included,Menstrual blood analyzed by scRNA-seq,scRNA-seq,PubMed,40171018,10.34133/research.0652
+IN005,Gire et al. 2025 at-home uterine biology,Included,Direct menstrual effluence multi-omics; preprint,RNA-seq + metatranscriptomics + exome,PubMed/medRxiv,40502563,10.1101/2025.05.21.25327630
+IN006,Gire et al. 2026 inflammatory resolution,Included,Direct menstrual effluence RNA-seq; preprint,RNA-seq,PubMed/medRxiv,41607666,10.64898/2025.12.30.25343168
+IN007,Silva et al. 2022 reproductive toxicants,Included,Direct whole menstrual blood untargeted metabolomics,Metabolomics,PubMed,35772554,10.1016/j.scitotenv.2022.157005
+IN008,Yang et al. 2012 proteomic analysis,Included,Direct menstrual blood proteomics,Proteomics,PubMed,22822186,10.1074/mcp.M112.018390
+IN009,Yang et al. 2026 menstrual blood markers,Included,Direct menstrual blood discovery proteomics,Proteomics,PubMed,41286099,10.1007/s00414-025-03655-3
+IN010,Borisova et al. 2024 lipidomics,Included,Direct menstrual blood lipidomics,Lipidomics,PubMed,39199287,10.3390/biom14080899
+IN011,Ji et al. 2023 DIA proteomics,Included,Direct menstrual blood proteomics,Proteomics,PubMed,37657716,10.1016/j.jprot.2023.104995
+IN012,Gurung et al. 2025 MF-sEV proteomics,Included,Direct MF-derived EV omics,Proteomics,PubMed,40091455,10.1002/jev2.70048
+IN013,Nardocci et al. 2026 MF-sEV RNA,Included,Direct MF-derived EV omics,RNA-seq,PubMed/GEO,41924633,GSE310627
+IN014,Penariol et al. 2022 MenSC multi-omics,Included,MF-derived cultured cells retained but provenance-separated,RNA-seq + proteomics,PubMed,36232817,PRJNA884641; PXD037033
+IN015,Tiniakou et al. 2026 MenSC methylation,Included,MF-derived MenSC whole-genome methylation; provenance-separated,Methylome,PubMed,42143138,10.1038/s43856-026-01641-3
+IN016,Vlasac et al. 2025 methylation cell typing,Included,Direct menstrual effluent methylation profiling,Methylation,PubMed,39825876,GSE275888
+IN017,Brennan et al. 2025 infertility EV proteomics,Included,Menstrual blood serum EV / depleted-serum omics,Proteomics,PubMed,40199990,10.1038/s41598-025-95818-w
+IN018,Human Reproduction 2026 longitudinal MB microbiome abstract,Included,Primary menstrual blood sequencing; conference abstract status explicit,16S,Human Reproduction,,10.1093/humrep/deag083.664
+CA001,Longitudinal multi-omics profiling of menstrual effluent reveals personalized metabolic and microbial signatures,Candidate,Project/web manuscript located; publication identity needs formal bibliographic verification before curated inclusion,NMR + 16S + ITS,Web,,
+EX001,Wu et al. 2005 HOXA10 methylation,Excluded,Targeted locus methylation/PCR rather than omics-scale profiling,Targeted methylation,PubMed,16098858,10.1016/j.ajog.2005.01.034
+EX002,Targeted forensic mRNA body-fluid identification studies,Excluded,Targeted marker panels rather than discovery/omics-scale menstrual-fluid profiling,Targeted RNA panel,PubMed,29549744,
+EX003,MenSC effects on hepatocellular carcinoma methylome,Excluded,"Sequenced analyte is HCC cells after MenSC co-culture, not menstrual-derived material",MeDIP/hMeDIP/RNA-seq,PubMed,31151404,10.1186/s13287-019-1243-8
+EX004,Endometrial biopsy single-cell atlases with menstrual-phase samples,Excluded,Endometrial biopsy is not menstrual fluid/effluent,scRNA-seq,Web,,
+REG001,ClinicalTrials.gov multi-term menstrual-fluid registry sweep,Included search stream,"Searched menstrual effluent, menstrual blood, menstrual fluid and menstruum; manually verified actual sample collection/analysis.",Clinical study registry,ClinicalTrials.gov,,NCT06332560; NCT05050916; NCT05698212; NCT07557992
+REG002,Netherlands public human-research registry sweep,Included search stream,Searched Onderzoek met mensen / ToetsingOnline for menstrual effluent and menstruum; manually verified relevant biospecimen use.,Clinical study registry,Onderzoek met mensen (NL),,NL-OMON51746; NL-OMON56879
+REG003,ISRCTN menstrual-fluid registry search,Included search stream,Searched menstrual blood/effluent terms and verified the biospecimen is directly measured.,Clinical study registry,ISRCTN,,ISRCTN72218532
+REG004,German Clinical Trials Register menstrual-fluid search,Included search stream,Searched DRKS for menstrual-blood studies and verified direct menstrual-blood use.,Clinical study registry,DRKS,,DRKS00036558

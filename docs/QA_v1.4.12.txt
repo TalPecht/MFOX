@@ -1,0 +1,16 @@
+MFOX v1.4.12 static QA
+
+PASS
+- Balanced R delimiters in app.R.
+- No duplicate declared Shiny input/output IDs.
+- Every UI output has a matching server output.
+- Explore contains Connections and the new scientific-network output.
+- Community no longer contains Scientific connections or its navigation handler.
+- Companies no longer contains a separate Evidence & maturity tab.
+- Company directory contains both company_evidence_summary and company_overview_cards.
+- Purpose / Inside / Start here entry overview is present in Landscape, Explore, Companies, Community, Plan a Study, Contribute, and New & Unreviewed.
+- Assay→study, dataset→assay (non-empty links), project→study, project→company foreign keys resolve.
+- Scientific data files were not intentionally modified in this release.
+
+Runtime limitation
+- R/Shiny is not installed in the build environment, so a full shiny::runApp() browser launch could not be executed here.

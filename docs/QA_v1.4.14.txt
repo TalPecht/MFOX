@@ -1,0 +1,22 @@
+MFOX v1.4.14 static QA
+
+PASS — app.R delimiter balance
+PASS — R/data_load.R delimiter balance
+PASS — R/validation.R delimiter balance
+PASS — scripts/validate_database.R delimiter balance
+PASS — no duplicate Shiny UI output IDs
+PASS — no duplicate Shiny server output IDs
+PASS — no duplicate Shiny input IDs
+PASS — every displayed UI output has a server binding
+PASS — registry_studies.csv: 6 unique registry IDs, 6 source URLs
+PASS — registry linked-study foreign keys resolve
+PASS — existing study/assay/dataset/project/company foreign keys resolve
+PASS — company directory no longer exposes a redundant 'Evidence source' label
+PASS — Community tab order begins with Collaboration groups
+PASS — geography has distinct research/company marker definitions
+PASS — New & Unreviewed recalculation-opacity override present
+PASS — voting updates in-session independently of disk persistence
+
+Runtime note: R/Shiny is not installed in the build environment, so browser-level launch testing must be run locally with scripts/validate_database.R and shiny::runApp().
+PASS — Community overview includes navigation cards for all five Community tabs
+PASS — Company utilization explorer has Sankey + co-occurrence heatmap bindings

@@ -1,0 +1,13 @@
+MFOX v1.4.16 voting-only QA
+
+PASS: R delimiter/static structure scan.
+PASS: JavaScript vote handler passes node --check.
+PASS: Previous per-candidate Shiny actionButton/output ID machinery removed.
+PASS: Candidate vote DOM keys are unique for the current candidate queue.
+PASS: Candidate cards and public vote summary read vote state only through isolate(), so vote state does not invalidate those outputs.
+PASS: Voting uses one candidate_vote_event observer and one candidate_vote_ack custom message channel.
+PASS: Vote observer wraps server-side failures and returns them to the clicked card.
+PASS: Vote persistence is separated from in-session state.
+PASS: All CSV data hashes are identical to v1.4.15.
+PASS: No duplicate literal Shiny UI IDs detected.
+LIMITATION: R/Shiny runtime is not installed in this build environment, so browser runtime verification must be performed locally.

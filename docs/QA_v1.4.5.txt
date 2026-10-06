@@ -1,0 +1,16 @@
+# QA — MFOX v1.4.5
+
+Static checks completed in the build environment:
+- R delimiter/bracket structure: PASS
+- Duplicate Shiny input/output IDs: PASS (none detected)
+- UI output IDs missing server render bindings: PASS (none detected)
+- Duplicate server output bindings: PASS (none detected)
+- CSS brace balance: PASS
+- project_studies → projects/studies foreign keys: PASS
+- project_companies → projects/companies foreign keys: PASS
+- New Explore connection map references existing project_companies.company_id field: PASS
+- Company Evidence & maturity UI/server output binding: PASS
+- Planner duplicate plan_summary UI output removed: PASS
+
+Runtime limitation:
+R/Rscript is not installed in the artifact build environment, so a full `shiny::runApp()` launch test could not be performed here. Run locally with the normal MFOX R environment after extraction.

@@ -1,0 +1,2 @@
+project_study_id,project_id,study_id,relationship,source_url,date_verified,notes
+PS001,PRJ002,S016,Company-affiliated research publication,https://pubmed.ncbi.nlm.nih.gov/40502563/,2026-09-29,"Linked because the curated study authorship/affiliation and MFOX company record identify NextGen Jane."

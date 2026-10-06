@@ -1,0 +1,8 @@
+MFOX v1.4.18 static QA
+
+PASS — Evidence-flow legend describes Sample type → Technology → Resource
+PASS — No layer:Curated studies node remains in app.R
+PASS — Technology-to-resource links are derived through study/assay relationships
+PASS — app.R delimiter counts balanced for (), {}, []
+PASS — No data CSV files modified by this release
+NOTE — Full Shiny runtime test requires local R environment.

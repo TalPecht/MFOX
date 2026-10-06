@@ -1,0 +1,13 @@
+# QA — MFOX v1.4.7
+
+Static release checks performed:
+- app.R delimiter balance: PASS
+- duplicate Shiny input IDs: PASS
+- duplicate Shiny output IDs in UI: PASS
+- referenced `mfox_den.svg` asset exists: PASS
+- desktop navigation offset and width use the same 214px rail value: PASS
+- Fox Den copy contains no invitation/join language: PASS
+- source data files preserved from v1.4.6: PASS
+
+Runtime limitation:
+- R / Rscript is not installed in the packaging environment, so Shiny runtime rendering was not executed here.

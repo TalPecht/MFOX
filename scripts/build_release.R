@@ -13,6 +13,9 @@ writeLines(c(
   paste0("MFOX release built: ", Sys.Date()),
   paste0("Studies: ", nrow(x$studies)),
   paste0("Assays: ", nrow(x$assays)),
-  paste0("Datasets: ", nrow(x$datasets))
+  paste0("Datasets: ", nrow(x$datasets)),
+  paste0("Projects: ", nrow(x$projects)),
+  paste0("Project-study links: ", nrow(x$project_studies)),
+  paste0("Project-company links: ", nrow(x$project_companies))
 ), "release/RELEASE_SUMMARY.txt")
 cat("Release snapshot created in release/\n")

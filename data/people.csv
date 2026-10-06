@@ -1,0 +1,101 @@
+person_id,name,institution,city,region,country,latitude,longitude,orcid,public_profile_url,notes
+P001,Christine N. Metz,Feinstein Institutes for Medical Research / Northwell Health,Manhasset,NY,USA,40.7984,-73.6996,,https://pubmed.ncbi.nlm.nih.gov/36104692/,Publication affiliation; recurring MFOX investigator
+P002,Peter K. Gregersen,Feinstein Institutes for Medical Research / Northwell Health,Manhasset,NY,USA,40.7984,-73.6996,,https://pubmed.ncbi.nlm.nih.gov/36104692/,Publication affiliation; recurring MFOX investigator
+P003,Andrew J. Shih,Feinstein Institutes for Medical Research / Northwell Health,Manhasset,NY,USA,40.7984,-73.6996,,https://pubmed.ncbi.nlm.nih.gov/36104692/,First author of MFOX single-cell study
+P004,Angela Goncalves,German Cancer Research Center (DKFZ),Heidelberg,,Germany,49.4143,8.6724,,https://www.medrxiv.org/content/10.1101/2024.05.06.24306766v1,Corresponding author affiliation from preprint
+P005,Camille Berthelot,Institut Pasteur / Université Paris Cité,Paris,,France,48.8407,2.311,,https://pubmed.ncbi.nlm.nih.gov/42381032/,Corresponding author
+P006,Axelle Brulport,Institut Pasteur / INSERM / Centre Léon Bérard,Paris / Lyon,,France,48.8566,2.3522,,https://pubmed.ncbi.nlm.nih.gov/42381032/,Corresponding author; multi-institution affiliation
+P007,Shanti Gurung,Hudson Institute of Medical Research / Monash University,Clayton,VIC,Australia,-37.9105,145.134,,https://pubmed.ncbi.nlm.nih.gov/40091455/,Corresponding author
+P008,Caroline E. Gargett,Hudson Institute of Medical Research / Monash University,Clayton,VIC,Australia,-37.9105,145.134,,https://pubmed.ncbi.nlm.nih.gov/40091455/,Senior author
+P009,Gino Nardocci,Universidad de los Andes / CiiB,Santiago,,Chile,-33.405,-70.506,,https://pubmed.ncbi.nlm.nih.gov/41924633/,Publication and GEO contact affiliation
+P010,Natalia Starodubtseva,"Kulakov National Medical Research Center for Obstetrics, Gynecology and Perinatology",Moscow,,Russia,55.6697,37.488,,https://pubmed.ncbi.nlm.nih.gov/39199287/,First author
+P011,Jian Zhang,"International Peace Maternity and Child Health Hospital, Shanghai Jiao Tong University",Shanghai,,China,31.202,121.437,,https://pubmed.ncbi.nlm.nih.gov/37657716/,Corresponding author
+P012,Margaret M. Mc Gee,University College Dublin / Conway Institute,Dublin,,Ireland,53.3067,-6.2214,,https://pubmed.ncbi.nlm.nih.gov/40199990/,Corresponding author
+P013,Irma M. Vlasac,Geisel School of Medicine at Dartmouth,Lebanon,NH,USA,43.6776,-72.273,0000-0002-1037-2698,https://pubmed.ncbi.nlm.nih.gov/39825876/,Corresponding author
+P014,Shruthi Mahalingaiah,Harvard T.H. Chan School of Public Health,Boston,MA,USA,42.3355,-71.1026,,https://pubmed.ncbi.nlm.nih.gov/35772554/,Corresponding author
+P015,Ridhi Tariyal,"NextGen Jane, Inc.",Oakland,CA,USA,37.8044,-122.2712,,https://pubmed.ncbi.nlm.nih.gov/40502563/,Corresponding author; company affiliation
+P016,Stephen Gire,"NextGen Jane, Inc.",Oakland,CA,USA,37.8044,-122.2712,,https://pubmed.ncbi.nlm.nih.gov/40502563/,Corresponding author; company affiliation
+P017,Ping Duan,Second Affiliated Hospital of Wenzhou Medical University,Wenzhou,Zhejiang,China,27.9938,120.6994,,https://pubmed.ncbi.nlm.nih.gov/40171018/,Publication affiliation
+P018,Donald Siegel,New York City Office of Chief Medical Examiner,New York,NY,USA,40.739,-73.9764,,https://pubmed.ncbi.nlm.nih.gov/22822186/,Corresponding author / recurring menstrual-blood proteomics investigator
+P019,Shih AJ,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P020,Warren LA,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P021,Schwalie PC,,,,Switzerland,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P022,Leap K,,,,France,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P023,Yang H,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P024,Borisova A,,,,NR,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P025,Gurung S,,,,Australia,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P026,Nardocci G,,,,Chile,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P027,Penariol LBC,,,,Brazil,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P028,Ji S,,,,China,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P029,Brennan K,,,,Lithuania/Ireland,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P030,Vlasac IM,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P031,Kyathanahalli C,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P032,Wang H,,,,China,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P033,Silva EL,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P034,Gire S,,,,USA,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P035,Tiniakou I,,,,Spain / UK,,,,,First author in curated MFOX evidence; affiliation requires publication-level curation if blank.
+P036,Rafał Watrowski,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P037,Stoyan Kostov,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P038,Eva Tsoneva,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P039,Sebastian D Schäfer,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P040,Radmila Sparić,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P041,Mario Palumbo,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P042,Veronika Günther,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P043,Slavica Akšam,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P044,Angel Yordanov,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P045,Pierluigi Chieppa,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P046,Ingolf Juhasz-Böss,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P047,Salvatore Giovanni Vitale,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P048,Ibrahim Alkatout,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P049,Inge K. Herrmann,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P050,Lucas Dosnon,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P051,Gregor Fuhrmann,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P052,Amna Zaheer,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P053,Aqsa Komel,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P054,Mohammad Baraa Abu Bakr,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P055,Achit Kumar Singh,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P056,Alen Sam Saji,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P057,Manahil Mansha Kharal,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P058,Areeba Ahsan,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P059,Muhammad Hamza Khan,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P060,Anum Akbar,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P061,Yige Feng,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P062,Yujie He,,,,,,,,,Broader menstrual-fluid bibliography seed; affiliation to be enriched during community curation.
+P063,Laura A Warren,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P064,Andrew Shih,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P065,Susana Marquez Renteira,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P066,Tamer Seckin,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P067,Brandon Blau,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P068,Kim Simpfendorfer,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P069,Annette Lee,,,,,,,,,Author on Warren et al. 2018 menstrual-effluent study.
+P070,Renate G van der Molen,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P071,J H F Schutten,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P072,Bram van Cranenbroek,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P073,Marja ter Meer,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P074,J Donckers,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P075,R R Scholten,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P076,O W H van der Heijden,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P077,M E A Spaanderman,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P078,Irma Joosten,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P079,Dorien Feyaerts,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P080,Tadeja Kuret,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P081,S van der Zeeuw-Hingrez,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P082,A van der Meer,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P083,Marilen Benner,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P084,Alejandro Lopez-Rincon,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P085,Olivier W H van der Heijden,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P086,Marie-Louise van der Hoorn,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P087,Gerben Ferwerda,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P088,G Comitini,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P089,W Shadmanfar,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P090,Aysel Gurbanova,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P091,Anne Stoverink,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P092,Imke M B van Wandeloo,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P093,Annemiek Nap,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P094,Nicole M de Roos,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P095,Marien I de Jonge,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P096,Janneke S Hoogstad-van Evert,Radboud University Medical Center,Nijmegen,,Netherlands,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P097,Oliver Richards,Swansea University Medical School,Swansea,,United Kingdom,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P098,Megan Cotterell,Swansea University Medical School,Swansea,,United Kingdom,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P099,Catherine A Thornton,Swansea University Medical School,Swansea,,United Kingdom,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.
+P100,April Rees,Swansea University Medical School,Swansea,,United Kingdom,51.824,5.866,,,Added from verified menstrual-fluid publication in v0.8.

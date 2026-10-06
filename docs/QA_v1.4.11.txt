@@ -1,0 +1,11 @@
+MFOX v1.4.11 static QA
+========================
+Delimiter balance: PASS
+UI outputs: 51; server bindings: 58; unbound: 0
+Duplicate direct Shiny IDs: 0
+Foreign keys: assay→study bad=0, dataset→assay bad=0, project_study→study bad=0, project_study→project bad=0, project_company→project bad=0, project_company→company bad=0
+Companies with missing maturity/evidence categories: 0
+Timeline overlap check: S003: 2 technologies, counts once in yearly study total
+Voting transport: native candidate_vote object event; legacy up/down inputs absent
+R runtime launch: NOT TESTED (R is not installed in this build environment)
+Issues: NONE

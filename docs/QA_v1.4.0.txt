@@ -1,0 +1,15 @@
+MFOX v1.4.0 — QA summary
+Date: 2026-09-29
+
+Checks completed in the build environment:
+- All R source files passed static delimiter/string balance checks.
+- No duplicate Shiny input/output IDs detected.
+- Every UI output ID has a corresponding server output definition.
+- Canonical CSV primary IDs checked for missing/duplicate values.
+- Study/Cohort/Biospecimen/Assay/Dataset foreign keys checked.
+- Project/Program -> Study and Project/Program -> Company foreign keys checked.
+- Authorship -> Person and Publication foreign keys checked.
+- New seed project/program relationships resolve to existing MFOX IDs.
+
+Environment limitation:
+- R/Rscript is not installed in this execution environment, so the Shiny app could not be launched and scripts/validate_database.R could not be executed natively. Run that script locally before deployment; it now includes project/program schema validation.

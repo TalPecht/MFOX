@@ -25,6 +25,11 @@ One row per indexed public molecular dataset/accession.
 
 Fields: `dataset_id`, `study_id`, `assay_id`, `repository`, `accession`, `data_type`, `raw_available`, `processed_available`, `metadata_available`, `code_available`, `dataset_url`, `date_checked`, `notes`
 
+## `registry_studies.csv`
+One row per public study-registry record in which menstrual fluid/blood/effluent is a primary, optional or secondary biospecimen. Registry records are kept separate from publication-derived MFOX studies.
+
+Fields: `registry_id`, `registry`, `title`, `status`, `clinical_context`, `condition`, `study_type`, `phase`, `enrollment`, `sponsor`, `country`, `start_date`, `completion_date`, `menstrual_fluid_role`, `sample_type`, `technology`, `mf_relevance`, `linked_study_id`, `source_url`, `last_verified`, `notes`, `other_registrations`, `other_registry_url`
+
 ## `people_labs.csv`
 Publication-derived people/lab metadata for navigation.
 

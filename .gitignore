@@ -1,0 +1,17 @@
+.Renviron
+.Renviron.*
+!.Renviron.example
+
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.DS_Store
+*.log
+
+rsconnect/
+release/
+
+renv/library/
+renv/staging/
+renv/local/

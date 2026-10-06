@@ -1,4 +1,4 @@
-﻿field,allowed_value,definition,analysis_note
+field,allowed_value,definition,analysis_note
 biospecimen_class,Direct menstrual fluid,Whole/unfractionated menstrual fluid or effluent analyzed without culture,Included in direct-MF views
 biospecimen_class,Direct cellular fraction,Freshly isolated or sorted cells from menstrual fluid,Included in direct-MF views
 biospecimen_class,Direct tissue fraction,Tissue fragments directly recovered from menstrual fluid,Included in direct-MF views
@@ -16,3 +16,55 @@ ex_vivo_manipulation,Isolation only,Fraction/cell/EV isolation without expansion
 ex_vivo_manipulation,Short-term culture,"Culture without substantial expansion, as defined/reported by study",Capture duration if available
 ex_vivo_manipulation,Expanded culture,Passaged/expanded menstrual-derived cells,Capture passage number if available
 ex_vivo_manipulation,Differentiation/perturbation,"Experimental treatment, differentiation, transfection or stimulation",Capture intervention in notes
+assay_modality,Flow cytometry,Multiparameter or high-dimensional flow-cytometric cellular profiling,
+assay_modality,16S rRNA sequencing,Amplicon sequencing for microbial community profiling,
+assay_modality,Metatranscriptomics,RNA-based profiling of microbial/community transcription,
+assay_family,Cellular profiling,Flow cytometry/CyTOF and related cell phenotyping,
+assay_family,Microbiome sequencing,16S/ITS/shotgun microbial profiling,
+assay_family,Transcriptomics,RNA-based molecular profiling,
+research_domain,Microbiome,"Biological research domain, separated from assay modality",
+research_domain,Immunology / cellular phenotyping,"Biological research domain, separated from assay modality",
+research_domain,Molecular profiling,"Biological research domain, separated from assay modality",
+utilization_domain,Diagnostics & screening,"Use of menstrual fluid or derived material to detect, screen for or stratify a condition.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Longitudinal monitoring,"Repeated menstrual sampling used to monitor physiology, biomarkers or health over time.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,At-home testing & biosensors,"Consumer/home collection, sensing or point-of-care style testing enabled by menstrual samples.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Biomarker discovery,Discovery or validation of molecular/cellular markers using menstrual samples.,"Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Collection & preanalytics,"Devices, stabilization or processing infrastructure for menstrual-fluid collection and handling.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Research infrastructure,"Platforms enabling menstrual-fluid research, assay standardization or sample access.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Fertility & reproductive health,"Testing or services focused on fertility, reproductive health or pregnancy-related applications.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Commercial testing,Commercial laboratory testing services that accept menstrual samples.,"Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Regenerative medicine,Therapeutic or regenerative use of menstrual-derived cells or products.,"Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Cell-derived products,"Products generated from menstrual-derived cells, including EVs or research-use derivatives.","Company discovery taxonomy; descriptive, not a score"
+utilization_domain,Research tools & biobanking,"Research-use cells, derivatives, banking or related tools.","Company discovery taxonomy; descriptive, not a score"
+material_exploited,Whole menstrual fluid,Unfractionated menstrual fluid/blood as the collection input.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Menstrual-fluid cells,Cells directly recovered from menstrual fluid.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Tissue fragments,Tissue fragments recovered from menstrual fluid.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Cell-free menstrual fluid,Soluble/supernatant fraction after cell/tissue removal.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,DNA / RNA,Nucleic-acid targets measured from menstrual samples.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Proteins / hormones,"Protein, cytokine, hormone or related analytes.","Company discovery taxonomy; descriptive, not a score"
+material_exploited,Microbiome,Microbial community or microbial nucleic-acid targets.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Metabolites / lipids,"Small-molecule, metabolite or lipid analytes.","Company discovery taxonomy; descriptive, not a score"
+material_exploited,Extracellular vesicles (EVs),EVs isolated from menstrual fluid or menstrual-derived cells.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Cultured menstrual-derived cells,Ex-vivo expanded menstrual-derived cells.,"Company discovery taxonomy; descriptive, not a score"
+material_exploited,Other / mixed,Mixed or not-yet-standardized material class.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Early-stage feasibility,Concept or technical-feasibility stage.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,R&D / platform development,Platform or product remains primarily in research and development.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Translational / diagnostic development,Active translation toward a diagnostic or product use.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Clinical / translational validation,Validation in translational or clinical-facing studies.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Clinical validation,Clinical validation stage.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Research-use products / R&D,Research-use products are available while broader development remains R&D.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Commercial testing service,Commercial laboratory/testing service is offered.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Regulatory-cleared / commercial platform,Regulatory-cleared and/or commercially deployed platform.,"Company discovery taxonomy; descriptive, not a score"
+maturity_level,Other / unclear,Development stage cannot yet be standardized.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Company-reported / emerging,Current evidence is primarily company-reported or early emerging material.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Company research program,Public company research program is documented.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Company-reported development,Public company documentation supports active development.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Company-reported platform,Public company documentation supports a platform or infrastructure claim.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Commercial service documentation,Commercial service and menstrual-sample use are publicly documented.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Commercial research-use documentation,Research-use commercial product/service is publicly documented.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Public / institutional validation,"Public institutional, grant or challenge documentation supports the activity.","Company discovery taxonomy; descriptive, not a score"
+evidence_status,Public innovation / feasibility project,Public innovation or feasibility project supports the activity.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Clinical validation study,A clinical validation study is documented.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Regulatory / clinical evidence,Regulatory or clinical evidence is documented.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Peer-reviewed evidence,Peer-reviewed evidence directly supports the company/application.,"Company discovery taxonomy; descriptive, not a score"
+evidence_status,Other,Other evidence type.,"Company discovery taxonomy; descriptive, not a score"

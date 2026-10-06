@@ -1,0 +1,23 @@
+# QA — MFOX v1.4.8
+
+Base: MFOX v1.4.7 Scientific Editorial + Fox Den.
+
+Checks performed:
+- app.R delimiter balance: PASS
+- duplicate Shiny input IDs: none
+- UI outputs without server bindings: none
+- Community overview action IDs present and connected to community_tabs: PASS
+- Fox Den option-3 PNG present and referenced in both public and authenticated Den headers: PASS
+- scientific/data directory SHA-256 hashes identical to v1.4.7: PASS
+- desktop sidebar width/content offset updated together (232 px): PASS by static CSS inspection
+- Home and sidebar MFOX logo size overrides present: PASS
+- R/Shiny runtime launch: NOT RUN — R is not installed in this build environment
+
+Recommended local smoke test:
+1. Open MFOX.Rproj.
+2. Set MFOX_FOX_PASSWORD if needed.
+3. Run shiny::runApp().
+4. Verify desktop sidebar does not overlap content.
+5. On Home, confirm larger MFOX logo and readable card text.
+6. On Community, use each at-a-glance card and confirm the matching tab opens.
+7. On Fox Den, confirm the new fox + menstrual-fluid-droplet logo appears before and after login.

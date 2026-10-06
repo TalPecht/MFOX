@@ -1,33 +1,33 @@
 biospecimen_id,study_id,cohort_id,assay_id,sample_fraction,biospecimen_class,derivation_class,ex_vivo_manipulation,culture_status,passage_number,direct_mf_scope,notes
 B001,S009,C009,A009R,Cultured MenSCs,Cultured menstrual-derived cells,Cultured derivative,Expanded culture,Cultured MenSCs,NR,No,
 B002,S009,C009,A009P,Cultured MenSCs,Cultured menstrual-derived cells,Cultured derivative,Expanded culture,Cultured MenSCs,NR,No,
-B003,S010,C010,A010,Whole menstrual blood,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,,Yes,CXCL5/IL1RN validated
+B003,S010,C010,A010,Whole menstrual blood,Whole menstrual fluid,Direct specimen,None/processing only,Not cultured,,Yes,CXCL5/IL1RN validated
 B004,S011,C011,A011E,Menstrual blood serum-derived EVs,Extracellular vesicles,Directly derived fraction,Isolation only,Not cultured,,Yes,
-B005,S011,C011,A011S,EV-depleted menstrual blood serum,Cell-free fraction,Directly derived fraction,Isolation only,Not cultured,,Yes,
-B006,S012,C012,A012,Whole menstrual effluent DNA,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,,Yes,
-B007,S013,C013,A013,Menstrual effluent,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,,Yes,Targeted lipid mediators
-B101,S001,C001,A001,Menstrual effluent tissue/cells,Direct cellular fraction,Directly derived fraction,Cell isolation,Not cultured,NR,Yes,GEO GSE203191
-B102,S002,C002,A002,Menstrual effluent-derived stromal cells,Cultured menstrual-derived cells,Cultured derivative,Culture + decidualization,Cultured stromal cells,NR,No,Study also includes flow cytometry
-B103,S003,C003,A003,Menstrual fluid cells,Direct cellular fraction,Directly derived fraction,Cell isolation,Not cultured,NR,Yes,Preprint; MuSiC deconvolution
-B104,S004,C004,A004N,Menstrual fluid nuclei,Direct cellular fraction,Directly derived fraction,Nuclei isolation,Not cultured,NR,Yes,Paired snRNA-seq
-B105,S004,C004,A004B,Menstrual fluid,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NR,Yes,Paired bulk RNA-seq
-B106,S005,C005,A005,Whole menstrual blood,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NR,Yes,Foundational proteome
-B107,S006,C006,A006,Dried menstrual blood spots,Direct menstrual fluid,Direct specimen,Drying/processing,Not cultured,NR,Yes,Endometriosis diagnostic model
-B108,S007,C007,A007,MF-derived small extracellular vesicles,Extracellular vesicles,Directly derived fraction,EV isolation,Not cultured,NR,Yes,PXD042101
-B109,S008,C008,A008,MF-derived small extracellular vesicles,Extracellular vesicles,Directly derived fraction,EV isolation,Not cultured,NR,Yes,GSE310627
-B110,S014,C014,A014,Menstrual fluid,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NR,Yes,Healthy menstrual fluid
-B111,S015,C015,A015,Whole menstrual blood,Direct menstrual fluid,Direct specimen,None/processing only,Not cultured,NR,Yes,Exposome pilot
-B112,S016,C016,A016,Menstrual blood cells,Direct cellular fraction,Directly derived fraction,Cell isolation,Not cultured,NR,Yes,Paired with ddELISA
-B113,S017,C017,A017R,Tampon-collected menstrual effluence,Direct menstrual fluid,Direct specimen,Ambient preservation,Not cultured,NR,Yes,At-home collection validation
-B114,S017,C017,A017M,Tampon-collected menstrual effluence,Direct menstrual fluid,Direct specimen,Ambient preservation,Not cultured,NR,Yes,At-home collection validation
-B115,S017,C017,A017E,Tampon-collected menstrual effluence,Direct menstrual fluid,Direct specimen,Ambient preservation,Not cultured,NR,Yes,12 paired blood samples
-B116,S018,C018,A018C,Cultured MenSCs,Cultured menstrual-derived cells,Cultured derivative,Expanded culture,Cultured MenSCs,NR,No,uIF vs fertile
-B117,S018,C018,A018E,MenSC-derived EVs,Cultured-cell derivatives,Experimental derivative,Culture + EV isolation,Cultured-cell derivative,NR,No,uIF vs fertile
-B118,S018,C018,A018S,EV-depleted MenSC supernatant,Cultured-cell derivatives,Experimental derivative,Culture + fractionation,Cultured-cell derivative,NR,No,uIF vs fertile
-B119,S019,C019,A019,MenSC-derived extracellular vesicles,Cultured-cell derivatives,Experimental derivative,Preconditioning + EV isolation,Cultured-cell derivative,NR,No,Experimental preconditioning
-B120,S020,C020,A020,MenSC secretome,Cultured-cell derivatives,Experimental derivative,Inflammatory preconditioning,Cultured-cell derivative,NR,No,Macrophage-polarization study
-B121,S021,C021,A021,Menstrual blood,Direct menstrual fluid,Direct specimen,DNA extraction,Not cultured,NR,Yes,Forensic body-site classification
-B122,S022,C022,A022,Menstrual blood,Direct menstrual fluid,Direct specimen,DNA extraction,Not cultured,NR,Yes,HPV/GTI diagnostic study
-B123,S023,C023,A023,Menstrual blood,Direct menstrual fluid,Direct specimen,Protein extraction,Not cultured,NR,Yes,Forensic marker discovery
-B124,S024,C024,A024,Menstrual-blood-derived eutopic endometrial cells,Direct cellular fraction,Directly derived fraction,Cell isolation,Not cultured,NR,Yes,Endometriosis biomarker study
-B125,S025,C025,A025,Menstrual blood DNA,Direct menstrual fluid,Direct specimen,DNA extraction,Not cultured,NR,Yes,Forensic body-fluid identification
+B005,S011,C011,A011S,EV-depleted menstrual blood serum,Cell-free menstrual fluid,Directly derived fraction,Isolation only,Not cultured,,Yes,
+B006,S012,C012,A012,Whole menstrual effluent DNA,Whole menstrual fluid,Direct specimen,None/processing only,Not cultured,,Yes,
+B007,S013,C013,A013,Menstrual effluent,Whole menstrual fluid,Direct specimen,None/processing only,Not cultured,,Yes,Targeted lipid mediators
+B021,S001,C001,A001,Menstrual effluent cells/tissue,Cells/tissue — not further separated,Direct specimen,Enzymatic dissociation,Not cultured,NR,Yes,GEO GSE203191
+B022,S002,C002,A002,Menstrual effluent cells,Menstrual-fluid cells,Direct specimen,Cell isolation,Not cultured,NR,Yes,
+B003S,S003,C003,A003S,Menstrual fluid cells,Menstrual-fluid cells,Direct specimen,Cell isolation,Not cultured,NR,Yes,
+B003B,S003,C003,A003B,Menstrual fluid,Whole menstrual fluid,Direct specimen,RNA extraction,Not cultured,NR,Yes,
+B004N,S004,C004,A004N,Menstrual fluid nuclei,Cells/tissue — not further separated,Direct specimen,Nuclei isolation,Not cultured,NR,Yes,
+B004B,S004,C004,A004B,Menstrual fluid,Whole menstrual fluid,Direct specimen,RNA extraction,Not cultured,NR,Yes,
+B023,S005,C005,A005,Whole menstrual blood / fractions,Whole menstrual fluid,Direct specimen,Fractionation/depletion,Not cultured,NR,Yes,
+B024,S006,C006,A006,Dried menstrual blood spot,Whole menstrual fluid,Direct specimen,Dried spot lipid extraction,Not cultured,NR,Yes,
+B025,S007,C007,A007,MF-derived sEVs,Extracellular vesicles,Directly derived fraction,EV isolation,Not cultured,NR,Yes,PXD042101
+B008,S008,C008,A008,MF plasma-derived sEVs,Extracellular vesicles,Directly derived fraction,EV isolation,Not cultured,NR,Yes,GSE310627
+B014,S014,C014,A014,Menstrual blood cells,Menstrual-fluid cells,Direct specimen,Cell isolation,Not cultured,NR,Yes,
+B015,S015,C015,A015,Whole menstrual blood,Whole menstrual fluid,Direct specimen,Small-molecule extraction,Not cultured,NR,Yes,
+B016R,S016,C016,A016R,Menstrual effluence,Whole menstrual fluid,Direct specimen,RNA extraction,Not cultured,NR,Yes,
+B016M,S016,C016,A016M,Menstrual effluence,Whole menstrual fluid,Direct specimen,RNA extraction,Not cultured,NR,Yes,
+B016E,S016,C016,A016E,Menstrual effluence DNA,Whole menstrual fluid,Direct specimen,DNA extraction,Not cultured,NR,Yes,
+B017,S017,C017,A017,Menstrual effluence,Whole menstrual fluid,Direct specimen,RNA extraction,Not cultured,NR,Yes,
+B018,S018,C018,A018,Menstrual blood supernatant/pellet,Whole menstrual fluid,Direct specimen,CPLC enrichment/fractionation,Not cultured,NR,Yes,
+B019,S019,C019,A019,Menstrual blood-derived stem cells,Cultured menstrual-derived cells,Cultured/isolated derivative,MenSC isolation / expansion,Cultured MenSCs,NR,No,
+B020,S020,C020,A020,Menstrual blood,Whole menstrual fluid,Direct specimen,DNA extraction,Not cultured,NR,Yes,
+BFC021,S021,C021,A021,Direct menstrual immune cells,Menstrual-fluid cells,Directly derived fraction,Isolation only,No culture,,Yes,Fresh menstrual-fluid-derived immune cells
+BFC022,S022,C022,A022,Direct menstrual immune cells,Menstrual-fluid cells,Directly derived fraction,Isolation only,No culture,,Yes,Fresh menstrual-fluid-derived immune cells
+BFC023,S023,C023,A023,Direct menstrual immune cells,Menstrual-fluid cells,Directly derived fraction,Isolation only,No culture,,Yes,Fresh menstrual-fluid-derived immune cells
+BFC024,S024,C024,A024,Direct menstrual immune cells,Menstrual-fluid cells,Directly derived fraction,Isolation only,No culture,,Yes,Fresh menstrual-fluid-derived immune cells
+BFC025,S025,C025,A025,Direct menstrual immune cells,Menstrual-fluid cells,Directly derived fraction,Isolation only,No culture,,Yes,Fresh menstrual-fluid-derived immune cells
+BFC026,S026,C026,A026,Direct menstrual immune cells,Menstrual-fluid cells,Directly derived fraction,Isolation only,No culture,,Yes,Fresh menstrual-fluid-derived immune cells

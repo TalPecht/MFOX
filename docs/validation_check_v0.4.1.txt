@@ -1,0 +1,11 @@
+MFOX v0.4.1 independent CSV integrity check
+===========================================
+PASSED
+No structural database errors detected.
+
+Studies: 20
+Cohorts: 20
+Biospecimens: 26
+Assays: 26
+Datasets: 8
+Candidates: 2

@@ -1,0 +1,32 @@
+# QA — MFOX v1.4.4
+
+Date: 2026-09-29
+
+## Changes covered
+
+- Community now includes a Companies & innovators view.
+- Community company filters cover company/technology/application text, country and utilization area.
+- Accepted company submissions can appear in Community pending structured curation.
+- Plan a Study company matching now uses transparent overlap across clinical context/disease, technology family, sample/material and longitudinal use.
+- When disease/context and/or technology are selected, at least one of those primary dimensions must match; a generic whole-menstrual-fluid match alone cannot flood the results.
+- Company cards state the overlap dimensions and retain maturity/evidence labels.
+- Study Intelligence includes a companies-with-overlap metric linking to the company panel.
+
+## Checks performed
+
+- Static R delimiter balance for app.R: PASS.
+- Duplicate Shiny UI IDs: none detected.
+- Duplicate server output definitions: none detected.
+- UI output IDs without a server output: none detected.
+- Project↔study and project↔company foreign keys: PASS.
+- Company IDs unique: PASS.
+- All 9 curated companies remain available to Community and the standalone Companies landscape.
+- Example overlap logic: Endometriosis + single-cell transcriptomics returns disease-overlap companies, with RNA/transcriptomics overlap additionally identified where present; sample overlap does not add unrelated companies when disease/technology are specified.
+
+## Interpretation note
+
+Company suggestions indicate translational overlap. They are not endorsements and do not imply equal evidence strength. Technology matching is explicitly described as technology-family overlap when a company uses a related molecular modality rather than the exact experimental implementation selected in the planner.
+
+## Runtime limitation
+
+This execution environment does not include R/Shiny, so the browser interaction could not be launched here. Static application checks and relational/data checks were performed before packaging.

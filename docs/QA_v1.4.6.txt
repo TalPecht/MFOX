@@ -1,0 +1,15 @@
+# QA — MFOX v1.4.6
+
+Static checks completed in the build environment:
+
+- app.R delimiter balance: PASS
+- duplicate Shiny UI output IDs: PASS (none)
+- duplicate Shiny input IDs: PASS (none)
+- UI outputs missing server bindings: PASS (none)
+- Study / assay / dataset / biospecimen foreign-key checks: PASS
+- Project ↔ study foreign-key checks: PASS
+- Project ↔ company foreign-key checks: PASS
+- v1.4.5 database content preserved: PASS
+- ZIP integrity: checked during packaging
+
+Runtime limitation: R/Rscript is not installed in this build environment, so `shiny::runApp()` cannot be executed here. The release therefore still requires a local runtime launch check in R/RStudio.

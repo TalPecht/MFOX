@@ -1,2 +1,1 @@
-update_id,run_date,source,query_version,records_found,new_candidates,duplicates,notes
-UPD001,2026-09-26,MFOX v0.3 systematic expansion,search-v0.3,25,12,0,Expanded curated study/assay coverage; added collaborator map and curator workflow
+﻿update_id,run_date,source,query_version,records_found,new_candidates,duplicates,notes

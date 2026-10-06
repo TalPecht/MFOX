@@ -10,3 +10,10 @@
 - `.github/workflows/` - automated validation and candidate discovery
 - `docs/` - scientific and technical documentation
 - `import_archive/` - non-canonical legacy/import material
+
+
+## v1.4.4 navigation note
+
+- **Community → Companies & innovators** shows the industry/translation organizations active in MFOX alongside researchers and labs.
+- **Companies** remains the dedicated utilization-discovery landscape.
+- **Plan a Study → Companies with overlap** suggests organizations sharing the selected clinical context/disease or technology family; sample/material and longitudinal use are shown as additional overlap dimensions.

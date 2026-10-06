@@ -1,0 +1,45 @@
+MFOX v1.4.19 static QA
+Date: 2026-09-29
+
+Scope
+- Company maturity prominence in directory
+- Structured Join the Community academic/company intake
+- Private MFOX Den Community profiles queue
+- Multi-registry search coverage + added verified ChiCTR record
+
+Checks passed
+- app.R delimiters balanced
+- no duplicate Shiny input/output IDs
+- every static UI output ID has a server binding
+- registry_studies.csv: 22 rows, 23 columns, no malformed rows, unique registry_id
+- registry_sources.csv: 16 rows, expected schema, unique source_id
+- community_submissions.csv: structured 28-column empty review queue
+- study/dataset/project/company foreign-key checks pass
+- registry linked_study_id values resolve to curated study IDs
+- company directory retains evidence status and now places maturity in company heading
+- Join form input IDs all resolve to server references; no stale join_* references
+- only one Community profiles MFOX Den tab and one server output remain
+
+Registry coverage
+Curated records currently span:
+- ClinicalTrials.gov
+- Chinese Clinical Trial Registry (ChiCTR)
+- Brazilian Clinical Trials Registry (ReBEC)
+- ISRCTN
+- German Clinical Trials Register (DRKS)
+- Onderzoek met mensen (NL)
+
+Active search scope additionally includes:
+- WHO ICTRP
+- CTIS
+- ANZCTR
+- CTRI
+- CRiS
+- JPRN / UMIN
+- PACTR
+- IRCT
+- TCTR
+- SLCTR
+
+Runtime limitation
+R is not installed in the build container, so shiny::runApp() could not be executed here. Static source/data checks were used instead.

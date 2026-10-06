@@ -1,0 +1,20 @@
+# QA — MFOX v1.4.2
+
+Date: 2026-09-29
+
+## Checks performed
+
+- Static delimiter balance for `app.R`: PASS.
+- Duplicate Shiny input IDs: none detected.
+- Duplicate server output definitions: none detected.
+- UI output IDs without a server output: none detected.
+- Core relational foreign keys: PASS.
+- Explore source choices: 9 clinical contexts, 11 technologies, 6 sample classes; every displayed single-dimension choice is represented by at least one curated assay record.
+- Explicit `Any` semantics present for Context / Technology / Sample.
+- Explore start guidance and zero-result guidance present.
+- Explore vs Plan a Study product distinction present in both tabs.
+- Planner captures the submitted query on **Build study intelligence** and requires at least one specific feature before returning a targeted result set.
+
+## Runtime limitation
+
+This execution environment does not contain an R runtime, so the Shiny app could not be launched interactively here. Run `Rscript scripts/validate_database.R` and then `shiny::runApp()` in an R environment for final runtime/UI verification.
