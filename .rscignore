@@ -1,0 +1,7 @@
+.Renviron.example
+.github
+.Rhistory
+.Rproj.user
+docs
+import_archive
+release

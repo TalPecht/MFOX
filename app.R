@@ -2645,9 +2645,84 @@ server <- function(input,output,session){
   },ignoreInit=TRUE,priority=100)
 
   output$fox_candidate_table <- renderDT({
-    c<-mfox$candidates |> left_join(vote_counts(),by="candidate_id") |> mutate(across(c(votes_for,votes_against,balance,total_votes),~replace_na(.x,0L))) |> arrange(desc(balance),desc(total_votes),desc(detected_date))
-    c |> select(candidate_id,title,source,detected_date,candidate_type,triage_status,`For`=votes_for,`Against`=votes_against,`Balance`=balance) |>
-      datatable(rownames=FALSE,filter="top",options=list(pageLength=12,scrollX=TRUE,columnDefs=list(list(className='dt-center',targets=c(6,7,8)))))
+    
+    c <- mfox$candidates |>
+      left_join(
+        vote_counts(),
+        by="candidate_id"
+      ) |>
+      mutate(
+        across(
+          c(
+            votes_for,
+            votes_against,
+            balance,
+            total_votes
+          ),
+          ~replace_na(.x,0L)
+        )
+      ) |>
+      arrange(
+        desc(balance),
+        desc(total_votes),
+        desc(detected_date)
+      )
+    
+    # Create direct source links for curator review
+    c$Resource <- vapply(
+      seq_len(nrow(c)),
+      function(i){
+        
+        r <- c[i,]
+        
+        url <- candidate_source_url(r)
+        label <- candidate_source_label(r)
+        
+        if(!nzchar(url)){
+          return("—")
+        }
+        
+        paste0(
+          '<a href="',
+          htmltools::htmlEscape(url),
+          '" target="_blank" rel="noopener noreferrer">',
+          htmltools::htmlEscape(label),
+          ' ↗</a>'
+        )
+      },
+      character(1)
+    )
+    
+    d <- c |>
+      select(
+        candidate_id,
+        title,
+        Resource,
+        source,
+        detected_date,
+        candidate_type,
+        triage_status,
+        `For`=votes_for,
+        `Against`=votes_against,
+        `Balance`=balance
+      )
+    
+    datatable(
+      d,
+      escape=FALSE,
+      rownames=FALSE,
+      filter="top",
+      options=list(
+        pageLength=12,
+        scrollX=TRUE,
+        columnDefs=list(
+          list(
+            className='dt-center',
+            targets=c(7,8,9)
+          )
+        )
+      )
+    )
   })
   observeEvent(input$submit_contribution,{
     path <- file.path("data","contributions.csv")
