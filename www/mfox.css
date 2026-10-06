@@ -624,3 +624,31 @@ body{font-size:1.02rem;line-height:1.52}
 .registry-coverage-details{margin:.35rem 0 1rem;border:1px solid rgba(115,48,77,.15);border-radius:14px;background:#fff;padding:.75rem .9rem}
 .registry-coverage-details summary{font-weight:750;color:#682844;cursor:pointer}
 .registry-coverage-details .dataTables_wrapper{margin-top:.75rem}
+
+/* Candidate source links — New & Unreviewed */
+.candidate-source-row{
+  margin:6px 0 7px;
+}
+
+.candidate-source-link{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:5px 9px;
+  border:1px solid var(--mfox-border);
+  border-radius:8px;
+  background:#fff;
+  color:var(--mfox-wine);
+  font-size:.72rem;
+  font-weight:700;
+  text-decoration:none;
+  transition:.14s ease;
+}
+
+.candidate-source-link:hover{
+  border-color:#d6a9b5;
+  background:#fff7f8;
+  color:var(--mfox-wine);
+  text-decoration:none;
+  transform:translateY(-1px);
+}

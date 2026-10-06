@@ -207,6 +207,86 @@ split_company_terms <- function(x){
 }
 
 candidate_vote_key <- function(x) gsub("[^A-Za-z0-9_]", "_", as.character(x))
+
+candidate_source_url <- function(r){
+  
+  get_value <- function(name){
+    if(!name %in% names(r)) return("")
+    
+    x <- as.character(r[[name]][1])
+    
+    if(length(x) == 0 || is.na(x) || !nzchar(trimws(x))) {
+      return("")
+    }
+    
+    trimws(x)
+  }
+  
+  # Prefer the canonical URL already stored with the candidate
+  url <- get_value("url")
+  if(nzchar(url)) return(url)
+  
+  # Fallback to DOI
+  doi <- get_value("doi")
+  if(nzchar(doi)){
+    doi <- sub(
+      "^https?://(dx\\.)?doi\\.org/",
+      "",
+      doi,
+      ignore.case = TRUE
+    )
+    return(paste0("https://doi.org/", doi))
+  }
+  
+  # Fallback to PubMed
+  pmid <- get_value("pmid")
+  if(nzchar(pmid)){
+    return(
+      paste0(
+        "https://pubmed.ncbi.nlm.nih.gov/",
+        pmid,
+        "/"
+      )
+    )
+  }
+  
+  # Last fallback if doi_or_accession itself contains a DOI
+  accession <- get_value("doi_or_accession")
+  if(nzchar(accession) && grepl("^10\\.", accession)){
+    return(paste0("https://doi.org/", accession))
+  }
+  
+  ""
+}
+
+
+candidate_source_label <- function(r){
+  
+  if(!"candidate_type" %in% names(r)) {
+    return("Open source")
+  }
+  
+  type <- as.character(r$candidate_type[1])
+  
+  if(is.na(type)) type <- ""
+  
+  type <- tolower(type)
+  
+  if(grepl("dataset|data repository", type)){
+    return("Open dataset")
+  }
+  
+  if(grepl("registry|clinical trial|registered study", type)){
+    return("Open registry")
+  }
+  
+  if(grepl("publication|paper|article|conference", type)){
+    return("Open paper")
+  }
+  
+  "Open source"
+}
+
 company_term_match <- function(x, selected){
   if(!length(selected)) return(rep(TRUE,length(x)))
   vapply(as.character(x),function(v){
@@ -2377,35 +2457,175 @@ server <- function(input,output,session){
   # Candidate cards are also rendered once. They contain plain HTML buttons,
   # not Shiny actionButtons, and no reactive output lives inside a card.
   output$candidate_cards <- renderUI({
-    c<-mfox$candidates
-    if(!nrow(c)) return(div(class="empty-note","No automated candidates are waiting for review."))
-    v0<-isolate(candidate_votes())
-    c<-c |> arrange(desc(detected_date),candidate_id)
-    tagList(lapply(seq_len(nrow(c)),function(i){
-      r<-c[i,]
-      cid<-as.character(r$candidate_id)
-      key<-candidate_vote_key(cid)
-      row<-candidate_vote_row(v0,cid)
-      div(class="candidate-card",
-        div(class="candidate-type",icon(ifelse(grepl("dataset",tolower(r$candidate_type %||% "")),"database","file-lines"))),
-        div(class="candidate-copy",
-          h4(r$title %||% "Untitled candidate"),
-          p(class="candidate-meta",paste(na.omit(c(r$source,r$detected_date,r$doi_or_accession)),collapse=" · ")),
-          if(!is.na(r$matched_terms)&&nzchar(r$matched_terms)) span(class="candidate-tag",r$matched_terms)
-        ),
-        div(id=paste0("candidate-vote-block-",key),class="candidate-vote-block",`data-pending`="0",`data-candidate-id`=cid,
-          div(class="candidate-vote-status",
-            span(class="candidate-balance",strong(`data-vote-role`="balance",ifelse(row$balance>0,paste0("+",row$balance),row$balance)),span(" review balance")),
-            span(class="candidate-counts",span(`data-vote-role`="for",row$votes_for)," for · ",span(`data-vote-role`="against",row$votes_against)," against")
-          ),
-          div(class="candidate-vote-buttons",
-            tags$button(type="button",class="candidate-vote candidate-vote-up candidate-vote-js",`data-candidate-id`=cid,`data-candidate-key`=key,`data-vote-direction`="for",`aria-pressed`="false",icon("thumbs-up"),span("For review")),
-            tags$button(type="button",class="candidate-vote candidate-vote-down candidate-vote-js",`data-candidate-id`=cid,`data-candidate-key`=key,`data-vote-direction`="against",`aria-pressed`="false",icon("thumbs-down"),span("Against priority"))
-          ),
-          div(class="candidate-vote-message",`data-vote-role`="message",`aria-live`="polite")
+    
+    c <- mfox$candidates
+    
+    if(!nrow(c)) {
+      return(
+        div(
+          class="empty-note",
+          "No automated candidates are waiting for review."
         )
       )
-    }))
+    }
+    
+    v0 <- isolate(candidate_votes())
+    
+    c <- c |>
+      arrange(desc(detected_date), candidate_id)
+    
+    tagList(
+      lapply(seq_len(nrow(c)), function(i){
+        
+        r <- c[i,]
+        
+        cid <- as.character(r$candidate_id)
+        key <- candidate_vote_key(cid)
+        row <- candidate_vote_row(v0, cid)
+        
+        source_url <- candidate_source_url(r)
+        source_label <- candidate_source_label(r)
+        
+        div(
+          class="candidate-card",
+          
+          div(
+            class="candidate-type",
+            icon(
+              ifelse(
+                grepl(
+                  "dataset",
+                  tolower(r$candidate_type %||% "")
+                ),
+                "database",
+                "file-lines"
+              )
+            )
+          ),
+          
+          div(
+            class="candidate-copy",
+            
+            h4(
+              r$title %||% "Untitled candidate"
+            ),
+            
+            p(
+              class="candidate-meta",
+              paste(
+                na.omit(
+                  c(
+                    r$source,
+                    r$detected_date,
+                    r$doi_or_accession
+                  )
+                ),
+                collapse=" · "
+              )
+            ),
+            
+            if(nzchar(source_url)) {
+              div(
+                class="candidate-source-row",
+                
+                tags$a(
+                  href=source_url,
+                  target="_blank",
+                  rel="noopener noreferrer",
+                  class="candidate-source-link",
+                  paste0(source_label, " ↗")
+                )
+              )
+            },
+            
+            if(
+              !is.na(r$matched_terms) &&
+              nzchar(r$matched_terms)
+            ) {
+              span(
+                class="candidate-tag",
+                r$matched_terms
+              )
+            }
+          ),
+          
+          div(
+            id=paste0(
+              "candidate-vote-block-",
+              key
+            ),
+            class="candidate-vote-block",
+            `data-pending`="0",
+            `data-candidate-id`=cid,
+            
+            div(
+              class="candidate-vote-status",
+              
+              span(
+                class="candidate-balance",
+                
+                strong(
+                  `data-vote-role`="balance",
+                  ifelse(
+                    row$balance > 0,
+                    paste0("+", row$balance),
+                    row$balance
+                  )
+                ),
+                
+                span(" review balance")
+              ),
+              
+              span(
+                class="candidate-counts",
+                span(
+                  `data-vote-role`="for",
+                  row$votes_for
+                ),
+                " for · ",
+                span(
+                  `data-vote-role`="against",
+                  row$votes_against
+                ),
+                " against"
+              )
+            ),
+            
+            div(
+              class="candidate-vote-buttons",
+              
+              tags$button(
+                type="button",
+                class="candidate-vote candidate-vote-up candidate-vote-js",
+                `data-candidate-id`=cid,
+                `data-candidate-key`=key,
+                `data-vote-direction`="for",
+                `aria-pressed`="false",
+                icon("thumbs-up"),
+                span("For review")
+              ),
+              
+              tags$button(
+                type="button",
+                class="candidate-vote candidate-vote-down candidate-vote-js",
+                `data-candidate-id`=cid,
+                `data-candidate-key`=key,
+                `data-vote-direction`="against",
+                `aria-pressed`="false",
+                icon("thumbs-down"),
+                span("Against priority")
+              )
+            ),
+            
+            div(
+              class="candidate-vote-message",
+              `data-vote-role`="message",
+              `aria-live`="polite"
+            )
+          )
+        )
+      })
+    )
   })
 
   # One event channel handles every candidate. Errors are caught and returned
