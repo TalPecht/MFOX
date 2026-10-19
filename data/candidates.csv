@@ -9016,3 +9016,51 @@ significantly as oral administration. And fibrin deposition was marked after
 intravenous treatment.
 
 PMID: 6769315 [Indexed for MEDLINE]",6769315,https://pubmed.ncbi.nlm.nih.gov/6769315/,MFOX PubMed query v0.5,Publication,NEW,,
+AUTO-PMID-42874529,2026-10-19,PubMed automated discovery,Simultaneous identification of saliva and semen by DNA methylation analysis using quantitative PCR and droplet digital PCR.,2026,42874529,10.1016/j.legalmed.2026.103037,"Legal medicine (Tokyo, Japan)",Lee SE; Koh UN; Fakhr R; Lim SY; Lim SK,"1. Leg Med (Tokyo). 2026 Oct 12;87:103037. doi: 10.1016/j.legalmed.2026.103037. 
+Online ahead of print.
+
+Simultaneous identification of saliva and semen by DNA methylation analysis 
+using quantitative PCR and droplet digital PCR.
+
+Lee SE(1), Koh UN(1), Fakhr R(1), Lim SY(1), Lim SK(2).
+
+Author information:
+(1)Department of Forensic Sciences, Sungkyunkwan University, Suwon, Republic of 
+Korea.
+(2)Department of Forensic Sciences, Sungkyunkwan University, Suwon, Republic of 
+Korea; ID-Cell Forensics Co., Sungkyunkwan University, Suwon, Republic of Korea; 
+Convergence Bio Forensic Institute (CBFI), Biomedical Institute for Convergence 
+at Sungkyunkwan University (BICS), Sungkyunkwan University, Suwon, Republic of 
+Korea. Electronic address: sikeun.lim@skku.edu.
+
+DNA methylation analysis is crucial in forensic science for age estimation, body 
+fluid identification, and differentiating monozygotic twins. While massively 
+parallel sequencing (MPS) and single-base extension (SBE) are standard, they are 
+often time-consuming and costly. This study evaluated the feasibility of using 
+quantitative PCR (qPCR) and droplet digital PCR (ddPCR) to identify saliva and 
+semen. DNA was bisulfite-converted using an EZ DNA Methylation-Gold Kit and two 
+body-fluid-specific cytosine-phosphate-guanine (CpG) markers (cg09652652-2d for 
+saliva and cg17610929 for semen) were analyzed using a QX600 droplet digital PCR 
+system. This assay showed high sensitivity for samples with concentrations 
+greater than 5 copies/μL. In contrast, qPCR yielded Ct values above 30 for the 
+same samples. To assess specificity, blood, menstrual blood, vaginal secretion, 
+and nasal secretion samples were tested for cross-reactivity with saliva and 
+semen. The saliva-specific marker was amplified in saliva samples and slight 
+amplification was also observed in nasal secretion samples. The semen-specific 
+marker was detected only in semen samples. ddPCR effectively identified saliva 
+in mixtures up to a 1:50 ratio and semen up to a 200:1 ratio. Moreover, ddPCR 
+demonstrated greater tolerance to PCR inhibition by humic acid compared to qPCR. 
+The DNA degradation test showed no significant difference between degraded and 
+non-degraded saliva samples (paired t-test, p > 0.05). In contrast, a 
+statistically significant difference was observed in semen. These findings 
+demonstrate that ddPCR has the potential for application in forensic science.
+
+Copyright © 2026 Elsevier B.V. All rights reserved.
+
+DOI: 10.1016/j.legalmed.2026.103037
+PMID: 42874529
+
+Conflict of interest statement: Declaration of competing interest The authors 
+declare that they have no known competing financial interests or personal 
+relationships that could have appeared to influence the work reported in this 
+paper.",10.1016/j.legalmed.2026.103037,https://pubmed.ncbi.nlm.nih.gov/42874529/,MFOX PubMed query v0.5,Publication,NEW,,
